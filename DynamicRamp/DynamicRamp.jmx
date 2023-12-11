@@ -1,0 +1,2495 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="5.0" jmeter="5.5">
+  <hashTree>
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="Test Plan" enabled="true">
+      <stringProp name="TestPlan.comments"></stringProp>
+      <boolProp name="TestPlan.functional_mode">false</boolProp>
+      <boolProp name="TestPlan.tearDown_on_shutdown">true</boolProp>
+      <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
+      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+        <collectionProp name="Arguments.arguments"/>
+      </elementProp>
+      <stringProp name="TestPlan.user_define_classpath"></stringProp>
+    </TestPlan>
+    <hashTree>
+      <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="false">
+        <collectionProp name="Arguments.arguments">
+          <elementProp name="flag" elementType="Argument">
+            <stringProp name="Argument.name">flag</stringProp>
+            <stringProp name="Argument.value">true</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+        </collectionProp>
+      </Arguments>
+      <hashTree/>
+      <kg.apc.jmeter.vizualizers.CorrectedResultCollector guiclass="kg.apc.jmeter.vizualizers.ThreadsStateOverTimeGui" testclass="kg.apc.jmeter.vizualizers.CorrectedResultCollector" testname="jp@gc - Active Threads Over Time" enabled="true">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>false</xml>
+            <fieldNames>true</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+            <sentBytes>true</sentBytes>
+            <url>true</url>
+            <threadCounts>true</threadCounts>
+            <idleTime>true</idleTime>
+            <connectTime>true</connectTime>
+          </value>
+        </objProp>
+        <stringProp name="filename"></stringProp>
+        <longProp name="interval_grouping">500</longProp>
+        <boolProp name="graph_aggregated">false</boolProp>
+        <stringProp name="include_sample_labels"></stringProp>
+        <stringProp name="exclude_sample_labels"></stringProp>
+        <stringProp name="start_offset"></stringProp>
+        <stringProp name="end_offset"></stringProp>
+        <boolProp name="include_checkbox_state">false</boolProp>
+        <boolProp name="exclude_checkbox_state">false</boolProp>
+        <stringProp name="TestPlan.comments">C:\Users\kpalanisamy\Downloads\10_DynamicRamp_V2_1</stringProp>
+      </kg.apc.jmeter.vizualizers.CorrectedResultCollector>
+      <hashTree/>
+      <kg.apc.jmeter.vizualizers.CorrectedResultCollector guiclass="kg.apc.jmeter.vizualizers.ThreadsStateOverTimeGui" testclass="kg.apc.jmeter.vizualizers.CorrectedResultCollector" testname="jp@gc - Active Threads Over Time" enabled="false">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>false</xml>
+            <fieldNames>true</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+            <sentBytes>true</sentBytes>
+            <url>true</url>
+            <threadCounts>true</threadCounts>
+            <idleTime>true</idleTime>
+            <connectTime>true</connectTime>
+          </value>
+        </objProp>
+        <stringProp name="filename"></stringProp>
+        <longProp name="interval_grouping">500</longProp>
+        <boolProp name="graph_aggregated">false</boolProp>
+        <stringProp name="include_sample_labels"></stringProp>
+        <stringProp name="exclude_sample_labels"></stringProp>
+        <stringProp name="start_offset"></stringProp>
+        <stringProp name="end_offset"></stringProp>
+        <boolProp name="include_checkbox_state">false</boolProp>
+        <boolProp name="exclude_checkbox_state">false</boolProp>
+      </kg.apc.jmeter.vizualizers.CorrectedResultCollector>
+      <hashTree/>
+      <ResultCollector guiclass="StatVisualizer" testclass="ResultCollector" testname="Aggregate Report" enabled="false">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>false</xml>
+            <fieldNames>true</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+            <sentBytes>true</sentBytes>
+            <url>true</url>
+            <threadCounts>true</threadCounts>
+            <idleTime>true</idleTime>
+            <connectTime>true</connectTime>
+          </value>
+        </objProp>
+        <stringProp name="filename"></stringProp>
+      </ResultCollector>
+      <hashTree/>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Thread Group" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <intProp name="LoopController.loops">-1</intProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <boolProp name="ThreadGroup.scheduler">true</boolProp>
+        <stringProp name="ThreadGroup.duration">600</stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
+      </ThreadGroup>
+      <hashTree>
+        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="false">
+          <stringProp name="delimiter">,</stringProp>
+          <stringProp name="fileEncoding"></stringProp>
+          <stringProp name="filename">C:/Users/kpalanisamy/Desktop/Dyn.txt</stringProp>
+          <boolProp name="ignoreFirstLine">false</boolProp>
+          <boolProp name="quotedData">false</boolProp>
+          <boolProp name="recycle">true</boolProp>
+          <stringProp name="shareMode">shareMode.all</stringProp>
+          <boolProp name="stopThread">false</boolProp>
+          <stringProp name="variableNames"></stringProp>
+        </CSVDataSet>
+        <hashTree/>
+        <JSR223Sampler guiclass="TestBeanGUI" testclass="JSR223Sampler" testname="AddThread" enabled="false">
+          <stringProp name="cacheKey">true</stringProp>
+          <stringProp name="filename"></stringProp>
+          <stringProp name="parameters"></stringProp>
+          <stringProp name="script">ctx.getThreadGroup().setNumThreads(2)
+</stringProp>
+          <stringProp name="scriptLanguage">groovy</stringProp>
+        </JSR223Sampler>
+        <hashTree>
+          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
+            <stringProp name="ConstantTimer.delay">6000</stringProp>
+          </ConstantTimer>
+          <hashTree/>
+        </hashTree>
+        <DebugSampler guiclass="TestBeanGUI" testclass="DebugSampler" testname="Debug Sampler1" enabled="false">
+          <boolProp name="displayJMeterProperties">true</boolProp>
+          <boolProp name="displayJMeterVariables">true</boolProp>
+          <boolProp name="displaySystemProperties">false</boolProp>
+        </DebugSampler>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Echo" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain"></stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">https://64351808537112453fcd559b.mockapi.io/api/v1/users</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
+            <stringProp name="ConstantTimer.delay">6000</stringProp>
+          </ConstantTimer>
+          <hashTree/>
+          <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="bflag" enabled="false">
+            <stringProp name="JSONPostProcessor.referenceNames">bflag</stringProp>
+            <stringProp name="JSONPostProcessor.jsonPathExprs">$.args.foo1</stringProp>
+            <stringProp name="JSONPostProcessor.match_numbers">1</stringProp>
+          </JSONPostProcessor>
+          <hashTree/>
+          <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="busercount" enabled="false">
+            <stringProp name="JSONPostProcessor.referenceNames">busercount</stringProp>
+            <stringProp name="JSONPostProcessor.jsonPathExprs">$[0].usercount</stringProp>
+            <stringProp name="JSONPostProcessor.match_numbers">1</stringProp>
+          </JSONPostProcessor>
+          <hashTree/>
+          <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="btgname" enabled="false">
+            <stringProp name="JSONPostProcessor.referenceNames">btgname</stringProp>
+            <stringProp name="JSONPostProcessor.jsonPathExprs">$[0].name</stringProp>
+            <stringProp name="JSONPostProcessor.match_numbers">1</stringProp>
+          </JSONPostProcessor>
+          <hashTree/>
+          <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="respBody" enabled="false">
+            <stringProp name="JSONPostProcessor.referenceNames">respBody</stringProp>
+            <stringProp name="JSONPostProcessor.jsonPathExprs">$</stringProp>
+            <stringProp name="JSONPostProcessor.match_numbers">1</stringProp>
+          </JSONPostProcessor>
+          <hashTree/>
+          <JSR223PostProcessor guiclass="TestBeanGUI" testclass="JSR223PostProcessor" testname="setPropertyJavascriptV3" enabled="false">
+            <stringProp name="cacheKey">true</stringProp>
+            <stringProp name="filename"></stringProp>
+            <stringProp name="parameters"></stringProp>
+            <stringProp name="script">//props.put(&quot;cflag&quot;,vars.get(&quot;bflag&quot;));
+//props.put(&quot;cusercount&quot;,vars.get(&quot;busercount&quot;));
+//props.put(vars.get(&quot;btgname&quot;),vars.get(&quot;busercount&quot;));
+	
+var jsonResponse = prev.getResponseDataAsString();
+
+// Parse JSON
+var jsonArray = JSON.parse(jsonResponse);
+
+// Iterate through all values in the JSON array
+for (var i = 0; i &lt; jsonArray.length; i++) {
+  	flagName = &quot;cwho_&quot;+jsonArray[i].name
+  	if (props.get(flagName) == null || props.get(flagName).indexOf(&quot;done&quot;)==0 )
+  	{
+		props.put(flagName,&quot;true&quot;)
+  		props.put(jsonArray[i].name,jsonArray[i].usercount);
+  	}
+  	
+}
+
+// script will not add any more users if props.get(&quot;cwho&quot;) has some thread id  
+// findout better way to set this flag
+</stringProp>
+            <stringProp name="scriptLanguage">javascript</stringProp>
+          </JSR223PostProcessor>
+          <hashTree/>
+          <JSR223PostProcessor guiclass="TestBeanGUI" testclass="JSR223PostProcessor" testname="setPropertyJavascript" enabled="true">
+            <stringProp name="cacheKey">true</stringProp>
+            <stringProp name="filename"></stringProp>
+            <stringProp name="parameters"></stringProp>
+            <stringProp name="script">//props.put(&quot;cflag&quot;,vars.get(&quot;bflag&quot;));
+//props.put(&quot;cusercount&quot;,vars.get(&quot;busercount&quot;));
+//props.put(vars.get(&quot;btgname&quot;),vars.get(&quot;busercount&quot;));
+/*	
+TG1=50
+TG2=100
+cwho_TG1=true
+cwho_TG2=true
+No new user will be added if the cwho_TG2 state is set to a thread id forever
+Soln: we can add a hard reset option 
+ 
+ // At start if user count in TG and dyn input is same user count will be stuck as state will always be true
+ */
+
+ 
+var jsonResponse = prev.getResponseDataAsString();
+
+// Parse JSON
+var jsonArray = JSON.parse(jsonResponse);
+
+// Iterate through all values in the JSON array
+for (var i = 0; i &lt; jsonArray.length; i++) {
+  	flagName = &quot;cwho_&quot;+jsonArray[i].name
+  	//rampup// newly added -- verify this
+  	if (props.get(flagName) == null) 
+  	{
+  		props.put(flagName, &quot;done&quot;);
+  		props.put(jsonArray[i].name,0);
+  	}
+  
+  	if ((props.get(jsonArray[i].name)!=jsonArray[i].usercount &amp;&amp; (props.get(flagName).indexOf(&quot;done&quot;)!==-1 ) &amp;&amp; jsonArray[i].usercount&gt;0))//|| props.get(flagName).indexOf(&quot;true&quot;)!==-1// Ensures only once flag is set to True when there is change in user count input// usercount 0 will make value to be stuck as there will be a mismatch
+  	{
+  		//if(props.get(flagName).indexOf(&quot;done&quot;)!==-1)
+		props.put(flagName,&quot;true&quot;)
+  		props.put(jsonArray[i].name,jsonArray[i].usercount);
+  		props.put(&quot;rampup_&quot;+jsonArray[i].name,jsonArray[i].rampup)
+  	}
+  	
+}
+
+// script will not add any more users if props.get(&quot;cwho&quot;) has some thread id  
+// findout better way to set this flag
+</stringProp>
+            <stringProp name="scriptLanguage">javascript</stringProp>
+          </JSR223PostProcessor>
+          <hashTree/>
+        </hashTree>
+        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>false</responseData>
+              <samplerData>false</samplerData>
+              <xml>false</xml>
+              <fieldNames>true</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+              <sentBytes>true</sentBytes>
+              <url>true</url>
+              <threadCounts>true</threadCounts>
+              <idleTime>true</idleTime>
+              <connectTime>true</connectTime>
+            </value>
+          </objProp>
+          <stringProp name="filename"></stringProp>
+        </ResultCollector>
+        <hashTree/>
+        <DebugSampler guiclass="TestBeanGUI" testclass="DebugSampler" testname="Debug Sampler" enabled="true">
+          <boolProp name="displayJMeterProperties">true</boolProp>
+          <boolProp name="displayJMeterVariables">true</boolProp>
+          <boolProp name="displaySystemProperties">false</boolProp>
+        </DebugSampler>
+        <hashTree/>
+      </hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="TG2" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <intProp name="LoopController.loops">-1</intProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <boolProp name="ThreadGroup.scheduler">true</boolProp>
+        <stringProp name="ThreadGroup.duration">600</stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
+      </ThreadGroup>
+      <hashTree>
+        <ConstantThroughputTimer guiclass="TestBeanGUI" testclass="ConstantThroughputTimer" testname="Constant Throughput Timer" enabled="false">
+          <intProp name="calcMode">1</intProp>
+          <doubleProp>
+            <name>throughput</name>
+            <value>5.0</value>
+            <savedValue>0.0</savedValue>
+          </doubleProp>
+        </ConstantThroughputTimer>
+        <hashTree/>
+        <JSR223Sampler guiclass="TestBeanGUI" testclass="JSR223Sampler" testname="test" enabled="false">
+          <stringProp name="cacheKey">false</stringProp>
+          <stringProp name="filename"></stringProp>
+          <stringProp name="parameters"></stringProp>
+          <stringProp name="script">log.info(props.get(java.lang.Thread.currentThread().getName().split(&quot; &quot;)[0]))//.indexOf(&quot;runthis&quot;)</stringProp>
+          <stringProp name="scriptLanguage">javascript</stringProp>
+        </JSR223Sampler>
+        <hashTree>
+          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="false">
+            <stringProp name="ConstantTimer.delay">6000</stringProp>
+          </ConstantTimer>
+          <hashTree/>
+          <SyncTimer guiclass="TestBeanGUI" testclass="SyncTimer" testname="Synchronizing Timer" enabled="false">
+            <intProp name="groupSize">1</intProp>
+            <longProp name="timeoutInMs">0</longProp>
+          </SyncTimer>
+          <hashTree/>
+          <GaussianRandomTimer guiclass="GaussianRandomTimerGui" testclass="GaussianRandomTimer" testname="Gaussian Random Timer" enabled="false">
+            <stringProp name="ConstantTimer.delay">300</stringProp>
+            <stringProp name="RandomTimer.range">5000.0</stringProp>
+          </GaussianRandomTimer>
+          <hashTree/>
+        </hashTree>
+        <JSR223Sampler guiclass="TestBeanGUI" testclass="JSR223Sampler" testname="AddThread" enabled="false">
+          <stringProp name="cacheKey">false</stringProp>
+          <stringProp name="filename"></stringProp>
+          <stringProp name="parameters"></stringProp>
+          <stringProp name="script">//if property is already 0 exit (to avoid multiple threads adding users) 
+//OR
+//run this only on first thread id
+//if(props.get(&quot;cflag&quot;).contains(&quot;true&quot;))
+if(props.get(&quot;cflag&quot;)!=null &amp;&amp; props.get(&quot;cflag&quot;).indexOf(&quot;true&quot;) !== -1)
+{
+	
+	// To ensure many users do not add threads
+	props.put(&quot;cflag&quot;,&quot;false&quot;);
+	
+
+	//Add this logic only to stop test on intial setup duration
+	//set duration for new threads so test does not run indefinitely
+	completedTime = parseInt(Date.now()) - parseInt(&quot;${TESTSTART.MS}&quot;);
+	log.info(&quot;actDuration::&quot;+props.get(&quot;actDuration&quot;))
+	if(props.get(&quot;actDuration&quot;)!=null)
+	{
+		ctx.getThreadGroup().setDuration(parseInt(props.get(&quot;actDuration&quot;))-Math.floor(completedTime/1000))	
+	}
+	else
+	{
+		props.put(&quot;actDuration&quot;,ctx.getThreadGroup().getDuration());
+		log.info(&quot;newDuration::&quot;+ctx.getThreadGroup().getDuration()-Math.floor(completedTime/1000))
+		ctx.getThreadGroup().setDuration(ctx.getThreadGroup().getDuration()-Math.floor(completedTime/1000))	
+	}	
+	log.info(&quot;DurationNow::&quot;+ctx.getThreadGroup().getDuration())
+	log.info(&quot;completedTime:::&quot;+Math.floor(completedTime/1000))
+	log.info(&quot;StartTime:::&quot;+parseInt(&quot;${TESTSTART.MS}&quot;))
+	log.info(&quot;currentTime:::&quot;+Date.now())
+	
+	// add for loop based in incrased count from prop response
+	//Adding five users everytime
+	for(i=0;i&lt;parseInt(props.get(&quot;cusercount&quot;));i++)
+	{
+		ctx.getThreadGroup().addNewThread(0, ctx.getEngine())		
+	}
+}
+
+//Working Functions
+//ctx.getThread().stop()
+//ctx.getThreadGroup().getScheduler()
+//ctx.getThreadGroup().stop()
+
+// current time--  ${__time(,)}
+// start time -- ${TESTSTART.MS}
+
+// Duration - (diff in currnet and start time)
+</stringProp>
+          <stringProp name="scriptLanguage">javascript</stringProp>
+        </JSR223Sampler>
+        <hashTree>
+          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="false">
+            <stringProp name="ConstantTimer.delay">6000</stringProp>
+          </ConstantTimer>
+          <hashTree/>
+        </hashTree>
+        <JSR223Sampler guiclass="TestBeanGUI" testclass="JSR223Sampler" testname="AddThreadrewritten" enabled="false">
+          <stringProp name="cacheKey">true</stringProp>
+          <stringProp name="filename"></stringProp>
+          <stringProp name="parameters"></stringProp>
+          <stringProp name="script">// Function to generate a random wait time between min and max milliseconds
+function getRandomWait(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+if (props.get(&quot;cflag&quot;) != null &amp;&amp; props.get(&quot;cflag&quot;).indexOf(&quot;true&quot;) !== -1) {
+// Set the minimum and maximum wait time in milliseconds
+var minWaitTimeMillis = 0;  // Adjust as needed
+var maxWaitTimeMillis = 5000; // Adjust as needed
+
+// Generate a random wait time
+var randomWaitMillis = getRandomWait(minWaitTimeMillis, maxWaitTimeMillis);
+
+// Log the random wait time
+log.info(&quot;Random Wait Time Before Script Start::&quot; + randomWaitMillis + &quot; milliseconds&quot;);
+
+// Sleep for the generated random wait time (in milliseconds)
+java.lang.Thread.sleep(randomWaitMillis);
+}
+
+// End of - Add a random timer here to avoid concurrent users performing below code.
+
+// Check if the &apos;cflag&apos; property is not null and contains &quot;true&quot;
+
+if (props.get(&quot;cflag&quot;) != null &amp;&amp; props.get(&quot;cflag&quot;).indexOf(&quot;true&quot;) !== -1) {
+	log.info(&quot;__Adding__&quot;+props.get(&quot;cusercount&quot;));
+	// Set &apos;cflag&apos; to &quot;false&quot; to prevent multiple threads from adding users
+	props.put(&quot;cflag&quot;, &quot;false&quot;);
+
+	// Logic to adjust test duration during initial setup
+	completedTime = parseInt(Date.now()) - parseInt(&quot;${TESTSTART.MS}&quot;);
+	log.info(&quot;actDuration::&quot; + props.get(&quot;actDuration&quot;));  // this is getting duration of different threadgroup
+
+	// Check if &apos;actDuration&apos; property is set
+	if (props.get(&quot;actDuration&quot;) != null) {
+		// Adjust thread group duration based on &apos;actDuration&apos;
+		ctx.getThreadGroup().setDuration(parseInt(props.get(&quot;actDuration&quot;)) - Math.floor(completedTime / 1000));
+	} else {
+		// Set &apos;actDuration&apos; if not already set
+		props.put(&quot;actDuration&quot;, ctx.getThreadGroup().getDuration());
+		log.info(&quot;newDuration::&quot; + (ctx.getThreadGroup().getDuration() - Math.floor(completedTime / 1000)));
+		ctx.getThreadGroup().setDuration(ctx.getThreadGroup().getDuration() - Math.floor(completedTime / 1000));
+	}
+	
+	// Log relevant information for debugging
+	log.info(&quot;DurationNow::&quot; + ctx.getThreadGroup().getDuration());
+	log.info(&quot;completedTime:::&quot; + Math.floor(completedTime / 1000));
+	log.info(&quot;StartTime:::&quot; + parseInt(&quot;${TESTSTART.MS}&quot;));
+	log.info(&quot;currentTime:::&quot; + Date.now());
+
+	// Add users based on the count specified in the &apos;cusercount&apos; property
+	for (i = 0; i &lt; parseInt(props.get(&quot;cusercount&quot;)); i++) {
+		ctx.getThreadGroup().addNewThread(0, ctx.getEngine());
+	}
+}
+
+// Working Functions
+// ctx.getThread().stop()
+// ctx.getThreadGroup().getScheduler()
+// ctx.getThreadGroup().stop()
+
+// Current time -- ${__time(,)}
+// Start time -- ${TESTSTART.MS}
+
+// Duration - (difference in current and start time)
+</stringProp>
+          <stringProp name="scriptLanguage">javascript</stringProp>
+        </JSR223Sampler>
+        <hashTree>
+          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="false">
+            <stringProp name="ConstantTimer.delay">6000</stringProp>
+          </ConstantTimer>
+          <hashTree/>
+        </hashTree>
+        <JSR223Sampler guiclass="TestBeanGUI" testclass="JSR223Sampler" testname="AddThreadrewrittenV2" enabled="false">
+          <stringProp name="cacheKey">true</stringProp>
+          <stringProp name="filename"></stringProp>
+          <stringProp name="parameters"></stringProp>
+          <stringProp name="script">// Function to generate a random wait time between min and max milliseconds
+function getRandomWait(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+// Function to add new threads to the thread group
+function addNewThreads(threadCount) {
+    for (var i = 0; i &lt; threadCount; i++) {
+        ctx.getThreadGroup().addNewThread(0, ctx.getEngine());
+    }
+}
+
+// Function to log relevant information for debugging
+function logDebugInformation() {
+    log.info(&quot;DurationNow::&quot; + ctx.getThreadGroup().getDuration());
+    log.info(&quot;completedTime:::&quot; + Math.floor(completedTime / 1000));
+    log.info(&quot;StartTime:::&quot; + parseInt(&quot;${TESTSTART.MS}&quot;));
+    log.info(&quot;currentTime:::&quot; + Date.now());
+}
+
+// Check if the &apos;cflag&apos; property is not null and contains &quot;true&quot;
+// AddLogic to add verification of threadId
+if (props.get(&quot;cflag&quot;) != null &amp;&amp; props.get(&quot;cflag&quot;).indexOf(&quot;true&quot;) !== -1) {
+    // Set the minimum and maximum wait time in milliseconds
+    var minWaitTimeMillis = 0;  // Adjust as needed
+    var maxWaitTimeMillis = 5000; // Adjust as needed
+
+    // Generate a random wait time
+    var randomWaitMillis = getRandomWait(minWaitTimeMillis, maxWaitTimeMillis);
+
+    // Log the random wait time
+    log.info(&quot;Random Wait Time Before Script Start::&quot; + randomWaitMillis + &quot; milliseconds&quot;);
+
+    // Sleep for the generated random wait time (in milliseconds)
+    java.lang.Thread.sleep(randomWaitMillis);
+
+    // End of - Add a random timer here to avoid concurrent users performing below code.
+
+    // Check if the &apos;cflag&apos; property is not null and contains &quot;true&quot;
+    if (props.get(&quot;cflag&quot;) != null &amp;&amp; props.get(&quot;cflag&quot;).indexOf(&quot;true&quot;) !== -1) {
+        log.info(&quot;__Adding__&quot; + props.get(&quot;cusercount&quot;));
+
+        // Set &apos;cflag&apos; to &quot;false&quot; to prevent multiple threads from adding users
+        props.put(&quot;cflag&quot;, &quot;false&quot;);
+
+        // Logic to adjust test duration during initial setup
+        completedTime = parseInt(Date.now()) - parseInt(&quot;${TESTSTART.MS}&quot;);
+        log.info(&quot;actDuration::&quot; + props.get(&quot;actDuration&quot;));  // this is getting duration of different threadgroup
+
+        // Check if &apos;actDuration&apos; property is set
+        if (props.get(&quot;actDuration&quot;) != null) {
+            // Adjust thread group duration based on &apos;actDuration&apos;
+            ctx.getThreadGroup().setDuration(parseInt(props.get(&quot;actDuration&quot;)) - Math.floor(completedTime / 1000));
+        } else {
+            // Set &apos;actDuration&apos; if not already set
+            props.put(&quot;actDuration&quot;, ctx.getThreadGroup().getDuration());
+            log.info(&quot;newDuration::&quot; + (ctx.getThreadGroup().getDuration() - Math.floor(completedTime / 1000)));
+            ctx.getThreadGroup().setDuration(ctx.getThreadGroup().getDuration() - Math.floor(completedTime / 1000));
+        }
+
+        // Log relevant information for debugging
+        logDebugInformation();
+
+        // Add users based on the count specified in the &apos;cusercount&apos; property
+        var userCountToAdd = parseInt(props.get(&quot;cusercount&quot;));
+        addNewThreads(userCountToAdd);
+    }
+}
+
+// Working Functions
+// ctx.getThread().stop()
+// ctx.getThreadGroup().getScheduler()
+// ctx.getThreadGroup().stop()
+
+// Current time -- ${__time(,)}
+// Start time -- ${TESTSTART.MS}
+
+// Duration - (difference in current and start time)
+</stringProp>
+          <stringProp name="scriptLanguage">javascript</stringProp>
+        </JSR223Sampler>
+        <hashTree>
+          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="false">
+            <stringProp name="ConstantTimer.delay">6000</stringProp>
+          </ConstantTimer>
+          <hashTree/>
+        </hashTree>
+        <JSR223Sampler guiclass="TestBeanGUI" testclass="JSR223Sampler" testname="AddThreadrewrittenV3" enabled="false">
+          <stringProp name="cacheKey">true</stringProp>
+          <stringProp name="filename"></stringProp>
+          <stringProp name="parameters"></stringProp>
+          <stringProp name="script">// Function to generate a random wait time between min and max milliseconds
+function getRandomWait(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+// Function to add new threads to the thread group
+function addNewThreads(threadCount) {
+    for (var i = 0; i &lt; threadCount; i++) {
+        ctx.getThreadGroup().addNewThread(0, ctx.getEngine());
+    }
+}
+
+// Function to log relevant information for debugging
+function logDebugInformation() {
+    log.info(&quot;DurationNow::&quot; + ctx.getThreadGroup().getDuration());
+    log.info(&quot;completedTime:::&quot; + Math.floor(completedTime / 1000));
+    log.info(&quot;StartTime:::&quot; + parseInt(&quot;${TESTSTART.MS}&quot;));
+    log.info(&quot;currentTime:::&quot; + Date.now());
+}
+
+// Check if the &apos;cflag&apos; property is not null and contains &quot;add&quot;
+// AddLogic to add verification of threadId
+if (props.get(&quot;cflag&quot;) != null &amp;&amp; props.get(&quot;cflag&quot;).indexOf(&quot;add&quot;) !== -1) {
+    // Set the minimum and maximum wait time in milliseconds
+    var minWaitTimeMillis = 0;  // Adjust as needed
+    var maxWaitTimeMillis = 5000; // Adjust as needed
+
+    // Generate a random wait time
+    var randomWaitMillis = getRandomWait(minWaitTimeMillis, maxWaitTimeMillis);
+
+    // Log the random wait time
+    log.info(&quot;Random Wait Time Before Script Start::&quot; + randomWaitMillis + &quot; milliseconds&quot;);
+
+    // Sleep for the generated random wait time (in milliseconds)
+    java.lang.Thread.sleep(randomWaitMillis);
+
+    // End of - Add a random timer here to avoid concurrent users performing below code.
+
+    // Check if the &apos;cflag&apos; property is not null and contains &quot;add&quot;
+    if (props.get(&quot;cflag&quot;) != null &amp;&amp; props.get(&quot;cflag&quot;).indexOf(&quot;add&quot;) !== -1) {
+        log.info(&quot;__Adding__&quot; + props.get(&quot;cusercount&quot;));
+
+        // Set &apos;cflag&apos; to &quot;false&quot; to prevent multiple threads from adding users
+        props.put(&quot;cflag&quot;, &quot;done&quot;);
+
+        // Logic to adjust test duration during initial setup
+        completedTime = parseInt(Date.now()) - parseInt(&quot;${TESTSTART.MS}&quot;);
+        log.info(&quot;actDuration::&quot; + props.get(&quot;actDuration&quot;));  // this is getting duration of different threadgroup
+
+        // Check if &apos;actDuration&apos; property is set
+        if (props.get(&quot;actDuration&quot;) != null) {
+            // Adjust thread group duration based on &apos;actDuration&apos;
+            ctx.getThreadGroup().setDuration(parseInt(props.get(&quot;actDuration&quot;)) - Math.floor(completedTime / 1000));
+        } else {
+            // Set &apos;actDuration&apos; if not already set
+            props.put(&quot;actDuration&quot;, ctx.getThreadGroup().getDuration());
+            log.info(&quot;newDuration::&quot; + (ctx.getThreadGroup().getDuration() - Math.floor(completedTime / 1000)));
+            ctx.getThreadGroup().setDuration(ctx.getThreadGroup().getDuration() - Math.floor(completedTime / 1000));
+        }
+
+        // Log relevant information for debugging
+        logDebugInformation();
+
+        // Add users based on the count specified in the &apos;cusercount&apos; property
+        var userCountToAdd = parseInt(props.get(&quot;cusercount&quot;));
+        addNewThreads(userCountToAdd);
+    }
+}
+
+// Working Functions
+// ctx.getThread().stop()
+// ctx.getThreadGroup().getScheduler()
+// ctx.getThreadGroup().stop()
+// ctx.getThreadGroup().getNumThreads();  total
+//ctx.getThreadGroup().getNumberOfThreads() active
+// Current time -- ${__time(,)}
+// Start time -- ${TESTSTART.MS}
+
+// Duration - (difference in current and start time)
+</stringProp>
+          <stringProp name="scriptLanguage">javascript</stringProp>
+        </JSR223Sampler>
+        <hashTree>
+          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="false">
+            <stringProp name="ConstantTimer.delay">6000</stringProp>
+          </ConstantTimer>
+          <hashTree/>
+        </hashTree>
+        <JSR223Sampler guiclass="TestBeanGUI" testclass="JSR223Sampler" testname="test" enabled="false">
+          <stringProp name="cacheKey">true</stringProp>
+          <stringProp name="filename"></stringProp>
+          <stringProp name="parameters"></stringProp>
+          <stringProp name="script">log.info((&quot;done-1&quot;).split(&quot;-&quot;)[0])</stringProp>
+          <stringProp name="scriptLanguage">javascript</stringProp>
+        </JSR223Sampler>
+        <hashTree>
+          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="false">
+            <stringProp name="ConstantTimer.delay">6000</stringProp>
+          </ConstantTimer>
+          <hashTree/>
+          <SyncTimer guiclass="TestBeanGUI" testclass="SyncTimer" testname="Synchronizing Timer" enabled="false">
+            <intProp name="groupSize">1</intProp>
+            <longProp name="timeoutInMs">0</longProp>
+          </SyncTimer>
+          <hashTree/>
+          <GaussianRandomTimer guiclass="GaussianRandomTimerGui" testclass="GaussianRandomTimer" testname="Gaussian Random Timer" enabled="false">
+            <stringProp name="ConstantTimer.delay">300</stringProp>
+            <stringProp name="RandomTimer.range">5000.0</stringProp>
+          </GaussianRandomTimer>
+          <hashTree/>
+        </hashTree>
+        <JSR223Sampler guiclass="TestBeanGUI" testclass="JSR223Sampler" testname="AddAndStop" enabled="false">
+          <stringProp name="cacheKey">true</stringProp>
+          <stringProp name="filename"></stringProp>
+          <stringProp name="parameters"></stringProp>
+          <stringProp name="script">// Function to generate a random wait time between min and max milliseconds
+function doRandomWait() {
+    
+   // Set the minimum and maximum wait time in milliseconds
+    var minWaitTimeMillis = 0;  // Adjust as needed
+    var maxWaitTimeMillis = 5000; // Adjust as needed
+
+    // Generate a random wait time
+    var randomWaitMillis = Math.floor(Math.random() * (maxWaitTimeMillis - minWaitTimeMillis + 1)) + minWaitTimeMillis;
+
+    // Log the random wait time
+    //log.info(&quot;Random Wait Time Before Script Start::&quot; + randomWaitMillis + &quot; milliseconds&quot;);
+
+    // Sleep for the generated random wait time (in milliseconds)
+    java.lang.Thread.sleep(randomWaitMillis);
+    
+    return true;
+}
+
+
+// Function to log relevant information for debugging
+/*function logDebugInformation() {
+    // Log information about the current state for debugging purposes
+    log.info(&quot;Current Duration::&quot; + ctx.getThreadGroup().getDuration());
+    log.info(&quot;Completed Time:::&quot; + Math.floor(completedTime / 1000));
+    log.info(&quot;Test Start Time:::&quot; + parseInt(&quot;${TESTSTART.MS}&quot;));
+    log.info(&quot;Current Time:::&quot; + Date.now());
+}*/
+
+// Function to handle the logic for adding threads
+function handleThreadAddition(userCountToAdd) {
+
+ 	//doRandomWait();
+
+    // Check if the &apos;cflag&apos; property is not null and contains &quot;add&quot;
+  //  if (props.get(&quot;cflag&quot;) != null &amp;&amp; props.get(&quot;cflag&quot;).indexOf(&quot;add&quot;) !== -1) {
+       
+
+        // Set &apos;cflag&apos; to &quot;done&quot; to prevent multiple threads from adding users
+      //  props.put(&quot;cflag&quot;, &quot;done&quot;);
+ 	   log.info(&quot;__Adding__&quot; + userCountToAdd);
+        // Logic to adjust test duration during initial setup
+        completedTime = parseInt(Date.now()) - parseInt(&quot;${TESTSTART.MS}&quot;);
+        log.info(&quot;Actual Duration::&quot; + props.get(&quot;actDuration&quot;));
+
+        // Check if &apos;actDuration&apos; property is set
+        if (props.get(&quot;actDuration&quot;) != null) {
+            // Adjust thread group duration based on &apos;actDuration&apos;
+            ctx.getThreadGroup().setDuration(parseInt(props.get(&quot;actDuration&quot;)) - Math.floor(completedTime / 1000));
+        } else {
+            // Set &apos;actDuration&apos; if not already set
+            props.put(&quot;actDuration&quot;, ctx.getThreadGroup().getDuration());
+            log.info(&quot;New Duration::&quot; + (ctx.getThreadGroup().getDuration() - Math.floor(completedTime / 1000)));
+            ctx.getThreadGroup().setDuration(ctx.getThreadGroup().getDuration() - Math.floor(completedTime / 1000));
+        }
+
+        // Log relevant information for debugging
+        //logDebugInformation();
+
+        // Add users based on the count specified in the &apos;cusercount&apos; property
+        //var userCountToAdd = parseInt(props.get(&quot;cusercount&quot;));
+        //addNewThreads(userCountToAdd);
+         for (var i = 0; i &lt; userCountToAdd; i++) {
+       	 ctx.getThreadGroup().addNewThread(0, ctx.getEngine());
+        //rampup calculation goes here
+   		 }
+   // }
+}
+
+// Function to stop threads based on a specific condition
+function stopThreads(userCountToStop) {
+	//doRandomWait();
+
+	//if (props.get(&quot;cflag&quot;) != null &amp;&amp; props.get(&quot;cflag&quot;).indexOf(&quot;stop&quot;) !== -1) {
+    // Set &apos;cflag&apos; to &quot;done&quot; to prevent multiple threads from stopping
+    //props.put(&quot;cflag&quot;, &quot;done&quot;);
+	log.info(&quot;__Stoping__&quot; + userCountToStop);	
+    // Log information about the threads to be stopped
+    log.info(&quot;Thread Name Without ID::&quot; + java.lang.Thread.currentThread().getName().split(&quot;-&quot;)[0]);
+    log.info(&quot;Thread Count::&quot; + ctx.getThreadGroup().getNumThreads());
+    log.info(&quot;Thread Number::&quot; + &quot;${__threadNum}&quot;);
+    log.info(&quot;Thread Group Number::&quot; + ctx.getThreadGroup().getName());
+
+firstRunningThread = 1;
+    // Stop specific threads
+
+//Find start thread - first running thread
+//Check if more threads are requested to stop - than running threads
+//get active threads count
+//get first running threadid
+
+    log.info(&quot;__StopingFrom__&quot; + firstRunningThread);
+    for (var i = firstRunningThread; i &lt;= userCountToStop; i++) {
+        //log.info(&quot;Stoping This::&quot; + java.lang.Thread.currentThread().getName().split(&quot;-&quot;)[0] + &quot;-&quot; + i);
+        ctx.getThreadGroup().stopThread(java.lang.Thread.currentThread().getName().split(&quot;-&quot;)[0] + &quot;-&quot; + i, true);//true to stop thread now// false for graceful stop//setting it to false adds more users during shutdown
+   	 }
+	//}
+}
+
+//if(props.get(&quot;cusercount&quot;)==null || parseInt(props.get(&quot;cusercount&quot;))==ctx.getThreadGroup().getNumberOfThreads())
+//	log.info(&quot;::No Action Needed::&quot;)
+
+if(props.get(&quot;cwho&quot;) == null &amp;&amp; props.get(&quot;cusercount&quot;)!=null&amp;&amp; parseInt(props.get(&quot;cusercount&quot;))&gt;0 &amp;&amp; parseInt(props.get(&quot;cusercount&quot;))!=ctx.getThreadGroup().getNumberOfThreads())
+	{
+		//log.info(props.get(&quot;cusercount&quot;) +&quot;==&quot;+ctx.getThreadGroup().getNumberOfThreads()); TGName 2-1
+		doRandomWait();
+		//log.info(&quot;Someone is Adding??::&quot;+!(props.get(&quot;cwho&quot;).indexOf(java.lang.Thread.currentThread().getName().split(&quot;-&quot;)[0]) !== -1))
+		
+		props.put(&quot;cwho&quot;, java.lang.Thread.currentThread().getName());
+		if ((parseInt(props.get(&quot;cusercount&quot;))&gt;ctx.getThreadGroup().getNumberOfThreads()) )//&amp;&amp; ((props.get(&quot;cwho&quot;) == null) || (props.get(&quot;cwho&quot;).indexOf(java.lang.Thread.currentThread().getName().split(&quot;-&quot;)[0]) !== -1)))
+			{	
+			/*	if(props.get(&quot;cwho&quot;) !== null)
+			log.info(&quot;Adding Because &quot;+props.get(&quot;cwho&quot;)+&quot; &quot;+(props.get(&quot;cwho&quot;) == null)+&quot; &quot;+(props.get(&quot;cwho&quot;).indexOf(java.lang.Thread.currentThread().getName().split(&quot;-&quot;)[0]) !== -1)+&quot; &quot;+(props.get(&quot;cwho&quot;).indexOf(&quot;done&quot;)!== -1))
+			*/			
+			
+			log.info(props.get(&quot;cwho&quot;) +&quot; IS adding&quot;)
+		    addCount=parseInt(props.get(&quot;cusercount&quot;))-ctx.getThreadGroup().getNumberOfThreads()
+		    handleThreadAddition(addCount);
+		    props.put(&quot;cwho&quot;,&quot;done&quot;);		
+			}
+		else if (parseInt(props.get(&quot;cusercount&quot;))&lt;ctx.getThreadGroup().getNumberOfThreads() )
+		{
+			log.info(&quot;Stop Users&quot;)
+			//props.put(&quot;cwho&quot;, java.lang.Thread.currentThread().getName());
+			log.info(props.get(&quot;cwho&quot;) +&quot; IS Stopping&quot;)
+			stopCount=ctx.getThreadGroup().getNumThreads()-parseInt(props.get(&quot;cusercount&quot;))
+			stopThreads(stopCount)
+			props.put(&quot;cwho&quot;,&quot;done&quot;);
+		}
+	}
+
+
+if(props.get(&quot;cwho&quot;) !== null &amp;&amp; props.get(&quot;cusercount&quot;)!=null &amp;&amp; parseInt(props.get(&quot;cusercount&quot;))&gt;0 &amp;&amp; parseInt(props.get(&quot;cusercount&quot;))!=ctx.getThreadGroup().getNumberOfThreads())
+	{
+		//log.info(props.get(&quot;cusercount&quot;) +&quot;==&quot;+ctx.getThreadGroup().getNumberOfThreads()); TGName 2-1
+		doRandomWait();
+		//log.info(&quot;Someone is Adding??::&quot;+!(props.get(&quot;cwho&quot;).indexOf(java.lang.Thread.currentThread().getName().split(&quot;-&quot;)[0]) !== -1))
+		if(props.get(&quot;cwho&quot;).indexOf(java.lang.Thread.currentThread().getName().split(&quot;-&quot;)[0]) !== -1)
+		{
+
+		if ((parseInt(props.get(&quot;cusercount&quot;))&gt;ctx.getThreadGroup().getNumberOfThreads()) )//&amp;&amp; ((props.get(&quot;cwho&quot;) == null) || (props.get(&quot;cwho&quot;).indexOf(java.lang.Thread.currentThread().getName().split(&quot;-&quot;)[0]) !== -1)))
+			{	
+			/*	if(props.get(&quot;cwho&quot;) !== null)
+			log.info(&quot;Adding Because &quot;+props.get(&quot;cwho&quot;)+&quot; &quot;+(props.get(&quot;cwho&quot;) == null)+&quot; &quot;+(props.get(&quot;cwho&quot;).indexOf(java.lang.Thread.currentThread().getName().split(&quot;-&quot;)[0]) !== -1)+&quot; &quot;+(props.get(&quot;cwho&quot;).indexOf(&quot;done&quot;)!== -1))
+			*/			
+			props.put(&quot;cwho&quot;, java.lang.Thread.currentThread().getName());
+			log.info(props.get(&quot;cwho&quot;) +&quot; IS adding&quot;)
+		    addCount=parseInt(props.get(&quot;cusercount&quot;))-ctx.getThreadGroup().getNumberOfThreads()
+		    handleThreadAddition(addCount);
+		    props.put(&quot;cwho&quot;,&quot;done&quot;);		
+			}
+		else if (parseInt(props.get(&quot;cusercount&quot;))&lt;ctx.getThreadGroup().getNumberOfThreads() )
+		{
+			log.info(&quot;Stop Users&quot;)
+			props.put(&quot;cwho&quot;, java.lang.Thread.currentThread().getName());
+			log.info(props.get(&quot;cwho&quot;) +&quot; IS Stopping&quot;)
+			stopCount=ctx.getThreadGroup().getNumThreads()-parseInt(props.get(&quot;cusercount&quot;))
+			stopThreads(stopCount)
+			props.put(&quot;cwho&quot;,&quot;done&quot;);
+		}
+		}
+		else
+			log.info(props.get(&quot;cwho&quot;) +&quot;IS DOING Add or Stop Operation&quot;)
+	}
+
+// Call the main functions to execute the thread-related logic
+//based on user count decide to add or stop
+// Check if the &apos;cflag&apos; property is not null and contains &quot;add&quot;
+
+
+/* Check if the &apos;cflag&apos; property is not null and contains &quot;stop&quot;
+if(parseInt(props.get(&quot;cusercount&quot;))&lt;ctx.getThreadGroup().getNumberOfThreads())
+if (props.get(&quot;cflag&quot;) != null &amp;&amp; props.get(&quot;cflag&quot;).indexOf(&quot;stop&quot;) !== -1) {
+    stopThreads();
+}
+*/</stringProp>
+          <stringProp name="scriptLanguage">javascript</stringProp>
+        </JSR223Sampler>
+        <hashTree>
+          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="false">
+            <stringProp name="ConstantTimer.delay">6000</stringProp>
+          </ConstantTimer>
+          <hashTree/>
+          <SyncTimer guiclass="TestBeanGUI" testclass="SyncTimer" testname="Synchronizing Timer" enabled="false">
+            <intProp name="groupSize">1</intProp>
+            <longProp name="timeoutInMs">0</longProp>
+          </SyncTimer>
+          <hashTree/>
+          <GaussianRandomTimer guiclass="GaussianRandomTimerGui" testclass="GaussianRandomTimer" testname="Gaussian Random Timer" enabled="false">
+            <stringProp name="ConstantTimer.delay">300</stringProp>
+            <stringProp name="RandomTimer.range">5000.0</stringProp>
+          </GaussianRandomTimer>
+          <hashTree/>
+        </hashTree>
+        <JSR223Sampler guiclass="TestBeanGUI" testclass="JSR223Sampler" testname="AddAndStopWorking" enabled="false">
+          <stringProp name="cacheKey">true</stringProp>
+          <stringProp name="filename"></stringProp>
+          <stringProp name="parameters"></stringProp>
+          <stringProp name="script">// Function to generate a random wait time between min and max milliseconds
+function doRandomWait() {
+    
+   // Set the minimum and maximum wait time in milliseconds
+    var minWaitTimeMillis = 0;  // Adjust as needed
+    var maxWaitTimeMillis = 5000; // Adjust as needed
+
+    // Generate a random wait time
+    var randomWaitMillis = Math.floor(Math.random() * (maxWaitTimeMillis - minWaitTimeMillis + 1)) + minWaitTimeMillis;
+
+    // Log the random wait time
+    //log.info(&quot;Random Wait Time Before Script Start::&quot; + randomWaitMillis + &quot; milliseconds&quot;);
+
+    // Sleep for the generated random wait time (in milliseconds)
+    java.lang.Thread.sleep(randomWaitMillis);
+    
+    return true;
+}
+
+
+// Function to log relevant information for debugging
+/*function logDebugInformation() {
+    // Log information about the current state for debugging purposes
+    log.info(&quot;Current Duration::&quot; + ctx.getThreadGroup().getDuration());
+    log.info(&quot;Completed Time:::&quot; + Math.floor(completedTime / 1000));
+    log.info(&quot;Test Start Time:::&quot; + parseInt(&quot;${TESTSTART.MS}&quot;));
+    log.info(&quot;Current Time:::&quot; + Date.now());
+}*/
+
+// Function to handle the logic for adding threads
+function handleThreadAddition(userCountToAdd) {
+
+ 	//doRandomWait();
+
+    // Check if the &apos;cflag&apos; property is not null and contains &quot;add&quot;
+  //  if (props.get(&quot;cflag&quot;) != null &amp;&amp; props.get(&quot;cflag&quot;).indexOf(&quot;add&quot;) !== -1) {
+       
+
+        // Set &apos;cflag&apos; to &quot;done&quot; to prevent multiple threads from adding users
+      //  props.put(&quot;cflag&quot;, &quot;done&quot;);
+ 	   log.info(&quot;__Adding__&quot; + userCountToAdd);
+        // Logic to adjust test duration during initial setup
+        completedTime = parseInt(Date.now()) - parseInt(&quot;${TESTSTART.MS}&quot;);
+        log.info(&quot;Actual Duration::&quot; + props.get(&quot;actDuration&quot;));
+
+        // Check if &apos;actDuration&apos; property is set
+        if (props.get(&quot;actDuration&quot;) != null) {
+            // Adjust thread group duration based on &apos;actDuration&apos;
+            ctx.getThreadGroup().setDuration(parseInt(props.get(&quot;actDuration&quot;)) - Math.floor(completedTime / 1000));
+        } else {
+            // Set &apos;actDuration&apos; if not already set
+            props.put(&quot;actDuration&quot;, ctx.getThreadGroup().getDuration());
+            log.info(&quot;New Duration::&quot; + (ctx.getThreadGroup().getDuration() - Math.floor(completedTime / 1000)));
+            ctx.getThreadGroup().setDuration(ctx.getThreadGroup().getDuration() - Math.floor(completedTime / 1000));
+        }
+
+        // Log relevant information for debugging
+        //logDebugInformation();
+
+        // Add users based on the count specified in the &apos;cusercount&apos; property
+        //var userCountToAdd = parseInt(props.get(&quot;cusercount&quot;));
+        //addNewThreads(userCountToAdd);
+         for (var i = 0; (i &lt; userCountToAdd) &amp;&amp; parseInt(props.get(&quot;cusercount&quot;))&gt;ctx.getThreadGroup().getNumberOfThreads(); i++) {
+       	 ctx.getThreadGroup().addNewThread(0, ctx.getEngine());
+        //rampup calculation goes here
+   		 }
+   // }
+}
+
+// Function to stop threads based on a specific condition
+function stopThreads(userCountToStop) {
+	//doRandomWait();
+
+	//if (props.get(&quot;cflag&quot;) != null &amp;&amp; props.get(&quot;cflag&quot;).indexOf(&quot;stop&quot;) !== -1) {
+    // Set &apos;cflag&apos; to &quot;done&quot; to prevent multiple threads from stopping
+    //props.put(&quot;cflag&quot;, &quot;done&quot;);
+	log.info(&quot;__Stoping__&quot; + userCountToStop);	
+    // Log information about the threads to be stopped
+    log.info(&quot;Thread Name Without ID::&quot; + java.lang.Thread.currentThread().getName().split(&quot;-&quot;)[0]);
+    log.info(&quot;Thread Count::&quot; + ctx.getThreadGroup().getNumThreads());
+    log.info(&quot;Thread Number::&quot; + &quot;${__threadNum}&quot;);
+    log.info(&quot;Thread Group Number::&quot; + ctx.getThreadGroup().getName());
+
+firstRunningThread = 1;
+    // Stop specific threads
+
+//Find start thread - first running thread
+//Check if more threads are requested to stop - than running threads
+//get active threads count
+//get first running threadid
+
+    log.info(&quot;__StopingFrom__&quot; + firstRunningThread);
+    for (var i = firstRunningThread; i &lt;= userCountToStop; i++) {
+        log.info(&quot;Stoping This::&quot; + java.lang.Thread.currentThread().getName().split(&quot;-&quot;)[0] + &quot;-&quot; + i);
+        ctx.getThreadGroup().stopThread(java.lang.Thread.currentThread().getName().split(&quot;-&quot;)[0] + &quot;-&quot; + i, false);//true to stop thread now// false for graceful stop
+   	 }
+	//}
+}
+
+//if(props.get(&quot;cusercount&quot;)==null || parseInt(props.get(&quot;cusercount&quot;))==ctx.getThreadGroup().getNumberOfThreads())
+//	log.info(&quot;::No Action Needed::&quot;)
+if(props.get(&quot;cwho&quot;) == null || props.get(&quot;cwho&quot;).indexOf(java.lang.Thread.currentThread().getName().split(&quot;-&quot;)[0]) !== -1 || props.get(&quot;cwho&quot;).indexOf(&quot;done&quot;)!== -1)
+if(props.get(&quot;cusercount&quot;)!=null&amp;&amp; parseInt(props.get(&quot;cusercount&quot;))&gt;0 &amp;&amp; parseInt(props.get(&quot;cusercount&quot;))!=ctx.getThreadGroup().getNumberOfThreads())
+	{
+		log.info(props.get(&quot;cusercount&quot;) +&quot;==&quot;+ctx.getThreadGroup().getNumberOfThreads());
+		doRandomWait();
+//		if(props.get(&quot;cwho&quot;) == null || props.get(&quot;cwho&quot;).indexOf(java.lang.Thread.currentThread().getName().split(&quot;-&quot;)[0]) !== -1 || props.get(&quot;cwho&quot;).indexOf(&quot;done&quot;)!== -1)
+		{
+		if (parseInt(props.get(&quot;cusercount&quot;))&gt;ctx.getThreadGroup().getNumberOfThreads()) 
+			{				
+			props.put(&quot;cwho&quot;, java.lang.Thread.currentThread().getName());
+			log.info(props.get(&quot;cwho&quot;) +&quot; IS adding&quot;)
+		    addCount=parseInt(props.get(&quot;cusercount&quot;))-ctx.getThreadGroup().getNumberOfThreads()
+		    handleThreadAddition(addCount);
+		    props.put(&quot;cwho&quot;,&quot;done&quot;);		
+			}
+		else if (parseInt(props.get(&quot;cusercount&quot;))&lt;ctx.getThreadGroup().getNumberOfThreads() )
+		{
+			log.info(&quot;Stop Users&quot;)
+			props.put(&quot;cwho&quot;, java.lang.Thread.currentThread().getName());
+			log.info(props.get(&quot;cwho&quot;) +&quot; IS Stopping&quot;)
+			stopCount=ctx.getThreadGroup().getNumThreads()-parseInt(props.get(&quot;cusercount&quot;))
+			stopThreads(stopCount)
+			props.put(&quot;cwho&quot;,&quot;done&quot;);
+		}
+		}
+		
+	}
+
+// Call the main functions to execute the thread-related logic
+//based on user count decide to add or stop
+// Check if the &apos;cflag&apos; property is not null and contains &quot;add&quot;
+
+
+/* Check if the &apos;cflag&apos; property is not null and contains &quot;stop&quot;
+if(parseInt(props.get(&quot;cusercount&quot;))&lt;ctx.getThreadGroup().getNumberOfThreads())
+if (props.get(&quot;cflag&quot;) != null &amp;&amp; props.get(&quot;cflag&quot;).indexOf(&quot;stop&quot;) !== -1) {
+    stopThreads();
+}
+*/</stringProp>
+          <stringProp name="scriptLanguage">javascript</stringProp>
+        </JSR223Sampler>
+        <hashTree>
+          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="false">
+            <stringProp name="ConstantTimer.delay">6000</stringProp>
+          </ConstantTimer>
+          <hashTree/>
+          <SyncTimer guiclass="TestBeanGUI" testclass="SyncTimer" testname="Synchronizing Timer" enabled="false">
+            <intProp name="groupSize">1</intProp>
+            <longProp name="timeoutInMs">0</longProp>
+          </SyncTimer>
+          <hashTree/>
+          <GaussianRandomTimer guiclass="GaussianRandomTimerGui" testclass="GaussianRandomTimer" testname="Gaussian Random Timer" enabled="false">
+            <stringProp name="ConstantTimer.delay">300</stringProp>
+            <stringProp name="RandomTimer.range">5000.0</stringProp>
+          </GaussianRandomTimer>
+          <hashTree/>
+        </hashTree>
+        <JSR223Sampler guiclass="TestBeanGUI" testclass="JSR223Sampler" testname="AddAndStop_nonull_working" enabled="false">
+          <stringProp name="cacheKey">true</stringProp>
+          <stringProp name="filename"></stringProp>
+          <stringProp name="parameters"></stringProp>
+          <stringProp name="script">// Function to generate a random wait time between min and max milliseconds
+function doRandomWait() {
+    
+   // Set the minimum and maximum wait time in milliseconds
+    var minWaitTimeMillis = 0;  // Adjust as needed
+    var maxWaitTimeMillis = 5000; // Adjust as needed
+
+    // Generate a random wait time
+    var randomWaitMillis = Math.floor(Math.random() * (maxWaitTimeMillis - minWaitTimeMillis + 1)) + minWaitTimeMillis;
+
+    // Log the random wait time
+    //log.info(&quot;Random Wait Time Before Script Start::&quot; + randomWaitMillis + &quot; milliseconds&quot;);
+
+    // Sleep for the generated random wait time (in milliseconds)
+    java.lang.Thread.sleep(randomWaitMillis);
+    
+    return true;
+}
+// Function to handle the logic for adding threads
+function handleThreadAddition(userCountToAdd) {
+
+ 	//doRandomWait();
+
+    // Check if the &apos;cflag&apos; property is not null and contains &quot;add&quot;
+  //  if (props.get(&quot;cflag&quot;) != null &amp;&amp; props.get(&quot;cflag&quot;).indexOf(&quot;add&quot;) !== -1) {
+       
+
+        // Set &apos;cflag&apos; to &quot;done&quot; to prevent multiple threads from adding users
+      //  props.put(&quot;cflag&quot;, &quot;done&quot;);
+ 	   log.info(&quot;__Adding__&quot; + userCountToAdd +  java.lang.Thread.currentThread().getName());
+        // Logic to adjust test duration during initial setup
+        completedTime = parseInt(Date.now()) - parseInt(&quot;${TESTSTART.MS}&quot;);
+        //log.info(&quot;Actual Duration::&quot; + props.get(&quot;actDuration&quot;));
+
+        // Check if &apos;actDuration&apos; property is set
+        if (props.get(&quot;actDuration&quot;) != null) {
+            // Adjust thread group duration based on &apos;actDuration&apos;
+            ctx.getThreadGroup().setDuration(parseInt(props.get(&quot;actDuration&quot;)) - Math.floor(completedTime / 1000));
+        } else {
+            // Set &apos;actDuration&apos; if not already set
+            props.put(&quot;actDuration&quot;, ctx.getThreadGroup().getDuration());
+            //log.info(&quot;New Duration::&quot; + (ctx.getThreadGroup().getDuration() - Math.floor(completedTime / 1000)));
+            ctx.getThreadGroup().setDuration(ctx.getThreadGroup().getDuration() - Math.floor(completedTime / 1000));
+        }
+
+        // Log relevant information for debugging
+        //logDebugInformation();
+
+        // Add users based on the count specified in the &apos;cusercount&apos; property
+        //var userCountToAdd = parseInt(props.get(&quot;cusercount&quot;));
+        //addNewThreads(userCountToAdd);
+         for (var i = 0; (i &lt; userCountToAdd&amp;&amp; parseInt(props.get(&quot;cusercount&quot;))&gt;ctx.getThreadGroup().getNumberOfThreads()) ; i++) {//
+         	
+       	 ctx.getThreadGroup().addNewThread(0, ctx.getEngine());
+       	 java.lang.Thread.sleep(6);
+        //rampup calculation goes here
+   		 }
+   // }
+}
+// Function to stop threads based on a specific condition
+function stopThreads(userCountToStop) {
+	//doRandomWait();
+
+	//if (props.get(&quot;cflag&quot;) != null &amp;&amp; props.get(&quot;cflag&quot;).indexOf(&quot;stop&quot;) !== -1) {
+    // Set &apos;cflag&apos; to &quot;done&quot; to prevent multiple threads from stopping
+    //props.put(&quot;cflag&quot;, &quot;done&quot;);
+	log.info(&quot;__Stoping__&quot; + userCountToStop);	
+    // Log information about the threads to be stopped
+    log.info(&quot;Thread Name Without ID::&quot; + java.lang.Thread.currentThread().getName().split(&quot;-&quot;)[0]);
+    log.info(&quot;Thread Count::&quot; + ctx.getThreadGroup().getNumThreads());
+    log.info(&quot;Thread Number::&quot; + &quot;${__threadNum}&quot;);
+    log.info(&quot;Thread Group Number::&quot; + ctx.getThreadGroup().getName());
+
+firstRunningThread = 1;
+    // Stop specific threads
+
+//Find start thread - first running thread
+//Check if more threads are requested to stop - than running threads
+//get active threads count
+//get first running threadid
+
+    log.info(&quot;__StopingFrom__&quot; + firstRunningThread);
+    for (var i = firstRunningThread; i &lt;= userCountToStop; i++) {
+        log.info(&quot;Stoping This::&quot; + java.lang.Thread.currentThread().getName().split(&quot;-&quot;)[0] + &quot;-&quot; + i);
+        ctx.getThreadGroup().stopThread(java.lang.Thread.currentThread().getName().split(&quot;-&quot;)[0] + &quot;-&quot; + i, false);//true to stop thread now// false for graceful stop
+   	 }
+	//}
+}
+
+	//log.info(props.get(&quot;cwho&quot;).indexOf(java.lang.Thread.currentThread().getName().split(&quot;-&quot;)[0]))
+
+if(props.get(&quot;cusercount&quot;)==null)
+props.put(&quot;cusercount&quot;,&quot;1&quot;);
+if(props.get(&quot;cwho&quot;)==null)
+props.put(&quot;cwho&quot;,&quot;done&quot;);
+
+
+if(props.get(&quot;cwho&quot;).indexOf(java.lang.Thread.currentThread().getName().split(&quot;-&quot;)[0]) == -1){
+if(parseInt(props.get(&quot;cusercount&quot;))&gt;0 &amp;&amp; parseInt(props.get(&quot;cusercount&quot;))!=ctx.getThreadGroup().getNumberOfThreads())
+	{
+		log.info(props.get(&quot;cusercount&quot;) +&quot;==&quot;+ctx.getThreadGroup().getNumberOfThreads());
+		doRandomWait();
+		{
+		if (parseInt(props.get(&quot;cusercount&quot;))&gt;ctx.getThreadGroup().getNumberOfThreads()) 
+			{				
+			props.put(&quot;cwho&quot;, java.lang.Thread.currentThread().getName());
+			log.info(props.get(&quot;cwho&quot;) +&quot; IS adding&quot;)
+		    addCount=parseInt(props.get(&quot;cusercount&quot;))-ctx.getThreadGroup().getNumberOfThreads()
+		    handleThreadAddition(addCount);
+		    props.put(&quot;cwho&quot;,&quot;done&quot;);		
+			}
+		else if (parseInt(props.get(&quot;cusercount&quot;))&lt;ctx.getThreadGroup().getNumberOfThreads() )
+		{
+			log.info(&quot;Stop Users&quot;)
+			props.put(&quot;cwho&quot;, java.lang.Thread.currentThread().getName());
+			log.info(props.get(&quot;cwho&quot;) +&quot; IS Stopping&quot;)
+			stopCount=ctx.getThreadGroup().getNumThreads()-parseInt(props.get(&quot;cusercount&quot;))
+			stopThreads(stopCount)
+			props.put(&quot;cwho&quot;,&quot;done&quot;);
+		}
+		}
+		
+	}}
+//EOF</stringProp>
+          <stringProp name="scriptLanguage">javascript</stringProp>
+        </JSR223Sampler>
+        <hashTree>
+          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="false">
+            <stringProp name="ConstantTimer.delay">6000</stringProp>
+          </ConstantTimer>
+          <hashTree/>
+          <SyncTimer guiclass="TestBeanGUI" testclass="SyncTimer" testname="Synchronizing Timer" enabled="false">
+            <intProp name="groupSize">1</intProp>
+            <longProp name="timeoutInMs">0</longProp>
+          </SyncTimer>
+          <hashTree/>
+          <GaussianRandomTimer guiclass="GaussianRandomTimerGui" testclass="GaussianRandomTimer" testname="Gaussian Random Timer" enabled="false">
+            <stringProp name="ConstantTimer.delay">300</stringProp>
+            <stringProp name="RandomTimer.range">5000.0</stringProp>
+          </GaussianRandomTimer>
+          <hashTree/>
+        </hashTree>
+        <JSR223Sampler guiclass="TestBeanGUI" testclass="JSR223Sampler" testname="AddAndStop_noLogs_Working" enabled="false">
+          <stringProp name="cacheKey">true</stringProp>
+          <stringProp name="filename"></stringProp>
+          <stringProp name="parameters"></stringProp>
+          <stringProp name="script">// Function to generate a random wait time between min and max milliseconds
+function doRandomWait() {
+    var minWaitTimeMillis = 0;
+    var maxWaitTimeMillis = 5000;
+    var randomWaitMillis = Math.floor(Math.random() * (maxWaitTimeMillis - minWaitTimeMillis + 1)) + minWaitTimeMillis;
+    java.lang.Thread.sleep(randomWaitMillis);
+    return true;
+}
+
+// Function to handle the logic for adding threads
+function handleThreadAddition(userCountToAdd) {
+    completedTime = parseInt(Date.now()) - parseInt(&quot;${TESTSTART.MS}&quot;);
+
+    if (props.get(&quot;actDuration&quot;) != null) {
+        ctx.getThreadGroup().setDuration(parseInt(props.get(&quot;actDuration&quot;)) - Math.floor(completedTime / 1000));
+    } else {
+        props.put(&quot;actDuration&quot;, ctx.getThreadGroup().getDuration());
+        ctx.getThreadGroup().setDuration(ctx.getThreadGroup().getDuration() - Math.floor(completedTime / 1000));
+    }
+// verify thread id to cwho 
+    for (var i = 0; (i &lt; userCountToAdd &amp;&amp; parseInt(props.get(&quot;cusercount&quot;)) &gt; ctx.getThreadGroup().getNumberOfThreads()); i++) {
+        ctx.getThreadGroup().addNewThread(0, ctx.getEngine());
+        java.lang.Thread.sleep(6);
+    }
+}
+
+// Function to stop threads based on a specific condition
+function stopThreads(userCountToStop) {
+    firstRunningThread = 1;
+
+    for (var i = firstRunningThread; i &lt;= userCountToStop; i++) {
+        ctx.getThreadGroup().stopThread(java.lang.Thread.currentThread().getName().split(&quot;-&quot;)[0] + &quot;-&quot; + i, false);
+    }
+}
+
+if (props.get(&quot;cusercount&quot;) == null) props.put(&quot;cusercount&quot;, &quot;1&quot;);
+if (props.get(&quot;cwho&quot;) == null) props.put(&quot;cwho&quot;, &quot;done&quot;);
+
+if (props.get(&quot;cwho&quot;).indexOf(java.lang.Thread.currentThread().getName().split(&quot;-&quot;)[0]) == -1) {
+    if (parseInt(props.get(&quot;cusercount&quot;)) &gt; 0 &amp;&amp; parseInt(props.get(&quot;cusercount&quot;)) != ctx.getThreadGroup().getNumberOfThreads()) {
+    	log.info(props.get(&quot;cusercount&quot;) +&quot;==&quot;+ctx.getThreadGroup().getNumberOfThreads());
+        doRandomWait();
+        {
+            if (parseInt(props.get(&quot;cusercount&quot;)) &gt; ctx.getThreadGroup().getNumberOfThreads()) {                
+                props.put(&quot;cwho&quot;, java.lang.Thread.currentThread().getName());
+                addCount = parseInt(props.get(&quot;cusercount&quot;)) - ctx.getThreadGroup().getNumberOfThreads()
+                handleThreadAddition(addCount);
+                props.put(&quot;cwho&quot;, &quot;done&quot;);        
+            } else if (parseInt(props.get(&quot;cusercount&quot;)) &lt; ctx.getThreadGroup().getNumberOfThreads()) {
+                props.put(&quot;cwho&quot;, java.lang.Thread.currentThread().getName());
+                stopCount = ctx.getThreadGroup().getNumThreads() - parseInt(props.get(&quot;cusercount&quot;))
+                stopThreads(stopCount)
+                props.put(&quot;cwho&quot;, &quot;done&quot;);
+            }
+        }
+    }
+}
+//EOF
+</stringProp>
+          <stringProp name="scriptLanguage">javascript</stringProp>
+        </JSR223Sampler>
+        <hashTree>
+          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="false">
+            <stringProp name="ConstantTimer.delay">6000</stringProp>
+          </ConstantTimer>
+          <hashTree/>
+          <SyncTimer guiclass="TestBeanGUI" testclass="SyncTimer" testname="Synchronizing Timer" enabled="false">
+            <intProp name="groupSize">1</intProp>
+            <longProp name="timeoutInMs">0</longProp>
+          </SyncTimer>
+          <hashTree/>
+          <GaussianRandomTimer guiclass="GaussianRandomTimerGui" testclass="GaussianRandomTimer" testname="Gaussian Random Timer" enabled="false">
+            <stringProp name="ConstantTimer.delay">300</stringProp>
+            <stringProp name="RandomTimer.range">5000.0</stringProp>
+          </GaussianRandomTimer>
+          <hashTree/>
+        </hashTree>
+        <JSR223Sampler guiclass="TestBeanGUI" testclass="JSR223Sampler" testname="AddAndStop_noLogs_VerifyCountNull_Working" enabled="false">
+          <stringProp name="cacheKey">false</stringProp>
+          <stringProp name="filename"></stringProp>
+          <stringProp name="parameters"></stringProp>
+          <stringProp name="script">// Function to generate a random wait time between min and max milliseconds
+function doRandomWait() {
+    var minWaitTimeMillis = 0;
+    var maxWaitTimeMillis = 5000;
+    var randomWaitMillis = Math.floor(Math.random() * (maxWaitTimeMillis - minWaitTimeMillis + 1)) + minWaitTimeMillis;
+    java.lang.Thread.sleep(randomWaitMillis);
+    return true;
+}
+
+// Function to handle the logic for adding threads
+function handleThreadAddition(userCountToAdd) {
+    completedTime = parseInt(Date.now()) - parseInt(&quot;${TESTSTART.MS}&quot;);
+
+    if (props.get(&quot;actDuration&quot;) != null) {
+        ctx.getThreadGroup().setDuration(parseInt(props.get(&quot;actDuration&quot;)) - Math.floor(completedTime / 1000));
+    } else {
+        props.put(&quot;actDuration&quot;, ctx.getThreadGroup().getDuration());
+        ctx.getThreadGroup().setDuration(ctx.getThreadGroup().getDuration() - Math.floor(completedTime / 1000));
+    }
+// verify thread id to cwho //&amp;&amp; props.get(&quot;cwho&quot;).indexOf(java.lang.Thread.currentThread().getName()) == -1
+//add rampup logic
+    for (var i = 0; (i &lt; userCountToAdd &amp;&amp; parseInt(props.get(&quot;cusercount&quot;)) &gt; ctx.getThreadGroup().getNumberOfThreads()); i++) {
+        ctx.getThreadGroup().addNewThread(0, ctx.getEngine());
+        java.lang.Thread.sleep(6);
+    }
+}
+
+// Function to stop threads based on a specific condition
+function stopThreads(userCountToStop) {
+    firstRunningThread = 1;
+
+    for (var i = firstRunningThread; i &lt;= userCountToStop; i++) {
+        ctx.getThreadGroup().stopThread(java.lang.Thread.currentThread().getName().split(&quot;-&quot;)[0] + &quot;-&quot; + i, false);
+    }
+}
+
+//if (props.get(&quot;cusercount&quot;) == null) props.put(&quot;cusercount&quot;, &quot;1&quot;);
+if (props.get(&quot;cwho&quot;) == null) props.put(&quot;cwho&quot;, &quot;done&quot;);
+
+if (props.get(&quot;cusercount&quot;) !== null &amp;&amp; props.get(&quot;cwho&quot;).indexOf(java.lang.Thread.currentThread().getName().split(&quot;-&quot;)[0]) == -1) {
+    if (parseInt(props.get(&quot;cusercount&quot;)) &gt; 0 &amp;&amp; parseInt(props.get(&quot;cusercount&quot;)) != ctx.getThreadGroup().getNumberOfThreads()) {
+    	log.info(props.get(&quot;cusercount&quot;) +&quot;==&quot;+ctx.getThreadGroup().getNumberOfThreads());
+        doRandomWait();
+        {
+            if (parseInt(props.get(&quot;cusercount&quot;)) &gt; ctx.getThreadGroup().getNumberOfThreads()) {                
+                props.put(&quot;cwho&quot;, java.lang.Thread.currentThread().getName());
+                addCount = parseInt(props.get(&quot;cusercount&quot;)) - ctx.getThreadGroup().getNumberOfThreads()
+                handleThreadAddition(addCount);
+                props.put(&quot;cwho&quot;, &quot;done&quot;);        
+            } else if (parseInt(props.get(&quot;cusercount&quot;)) &lt; ctx.getThreadGroup().getNumberOfThreads()) {
+                props.put(&quot;cwho&quot;, java.lang.Thread.currentThread().getName());
+                stopCount = ctx.getThreadGroup().getNumThreads() - parseInt(props.get(&quot;cusercount&quot;))
+                stopThreads(stopCount)
+                props.put(&quot;cwho&quot;, &quot;done&quot;);
+            }
+        }
+    }
+}
+//EOF
+</stringProp>
+          <stringProp name="scriptLanguage">javascript</stringProp>
+        </JSR223Sampler>
+        <hashTree>
+          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="false">
+            <stringProp name="ConstantTimer.delay">6000</stringProp>
+          </ConstantTimer>
+          <hashTree/>
+          <SyncTimer guiclass="TestBeanGUI" testclass="SyncTimer" testname="Synchronizing Timer" enabled="false">
+            <intProp name="groupSize">1</intProp>
+            <longProp name="timeoutInMs">0</longProp>
+          </SyncTimer>
+          <hashTree/>
+          <GaussianRandomTimer guiclass="GaussianRandomTimerGui" testclass="GaussianRandomTimer" testname="Gaussian Random Timer" enabled="false">
+            <stringProp name="ConstantTimer.delay">300</stringProp>
+            <stringProp name="RandomTimer.range">5000.0</stringProp>
+          </GaussianRandomTimer>
+          <hashTree/>
+        </hashTree>
+        <JSR223Sampler guiclass="TestBeanGUI" testclass="JSR223Sampler" testname="AddAndStop_createVariableforTG" enabled="false">
+          <stringProp name="cacheKey">false</stringProp>
+          <stringProp name="filename"></stringProp>
+          <stringProp name="parameters"></stringProp>
+          <stringProp name="script">// Function to generate a random wait time between min and max milliseconds
+function doRandomWait() {
+    var minWaitTimeMillis = 0;
+    var maxWaitTimeMillis = 5000;
+    var randomWaitMillis = Math.floor(Math.random() * (maxWaitTimeMillis - minWaitTimeMillis + 1)) + minWaitTimeMillis;
+    java.lang.Thread.sleep(randomWaitMillis);
+    return true;
+}
+
+// Function to handle the logic for adding threads
+function handleThreadAddition(userCountToAdd) {
+    completedTime = parseInt(Date.now()) - parseInt(&quot;${TESTSTART.MS}&quot;);
+
+    if (props.get(&quot;actDuration&quot;) != null) {
+        ctx.getThreadGroup().setDuration(parseInt(props.get(&quot;actDuration&quot;)) - Math.floor(completedTime / 1000));
+    } else {
+        props.put(&quot;actDuration&quot;, ctx.getThreadGroup().getDuration());
+        ctx.getThreadGroup().setDuration(ctx.getThreadGroup().getDuration() - Math.floor(completedTime / 1000));
+    }
+// verify thread id to cwho //&amp;&amp; props.get(&quot;cwho&quot;).indexOf(java.lang.Thread.currentThread().getName()) == -1
+//add rampup logic
+    for (var i = 0; (i &lt; userCountToAdd &amp;&amp; parseInt(props.get(&quot;cusercount&quot;)) &gt; ctx.getThreadGroup().getNumberOfThreads()); i++) {
+        ctx.getThreadGroup().addNewThread(0, ctx.getEngine());
+        java.lang.Thread.sleep(6);
+    }
+}
+
+// Function to stop threads based on a specific condition
+function stopThreads(userCountToStop) {
+    firstRunningThread = 1;
+
+    for (var i = firstRunningThread; i &lt;= userCountToStop; i++) {
+        ctx.getThreadGroup().stopThread(java.lang.Thread.currentThread().getName().split(&quot;-&quot;)[0] + &quot;-&quot; + i, false);
+    }
+}
+
+//if (props.get(&quot;cusercount&quot;) == null) props.put(&quot;cusercount&quot;, &quot;1&quot;);
+if (props.get(&quot;cwho&quot;) == null) props.put(&quot;cwho&quot;, &quot;done&quot;);
+threadGrpName = java.lang.Thread.currentThread().getName().split(&quot; &quot;)[0]
+
+if (props.get(threadGrpName) !== null &amp;&amp; props.get(&quot;cwho&quot;).indexOf(threadGrpName) == -1) {
+    if (parseInt(props.get(threadGrpName)) &gt; 0 &amp;&amp; parseInt(props.get(threadGrpName)) != ctx.getThreadGroup().getNumberOfThreads()) {
+    	log.info(props.get(threadGrpName) +&quot;==&quot;+ctx.getThreadGroup().getNumberOfThreads());
+        doRandomWait();
+        {
+            if (parseInt(props.get(threadGrpName)) &gt; ctx.getThreadGroup().getNumberOfThreads()) {                
+                props.put(&quot;cwho&quot;, java.lang.Thread.currentThread().getName());
+                addCount = parseInt(props.get(threadGrpName)) - ctx.getThreadGroup().getNumberOfThreads()
+                handleThreadAddition(addCount);
+                props.put(&quot;cwho&quot;, &quot;done&quot;);        
+            } else if (parseInt(props.get(threadGrpName)) &lt; ctx.getThreadGroup().getNumberOfThreads()) {
+                props.put(&quot;cwho&quot;, java.lang.Thread.currentThread().getName());
+                stopCount = ctx.getThreadGroup().getNumThreads() - parseInt(props.get(threadGrpName))
+                stopThreads(stopCount)
+                props.put(&quot;cwho&quot;, &quot;done&quot;);
+            }
+        }
+    }
+}
+//EOF
+</stringProp>
+          <stringProp name="scriptLanguage">javascript</stringProp>
+        </JSR223Sampler>
+        <hashTree>
+          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="false">
+            <stringProp name="ConstantTimer.delay">6000</stringProp>
+          </ConstantTimer>
+          <hashTree/>
+          <SyncTimer guiclass="TestBeanGUI" testclass="SyncTimer" testname="Synchronizing Timer" enabled="false">
+            <intProp name="groupSize">1</intProp>
+            <longProp name="timeoutInMs">0</longProp>
+          </SyncTimer>
+          <hashTree/>
+          <GaussianRandomTimer guiclass="GaussianRandomTimerGui" testclass="GaussianRandomTimer" testname="Gaussian Random Timer" enabled="false">
+            <stringProp name="ConstantTimer.delay">300</stringProp>
+            <stringProp name="RandomTimer.range">5000.0</stringProp>
+          </GaussianRandomTimer>
+          <hashTree/>
+        </hashTree>
+        <JSR223Sampler guiclass="TestBeanGUI" testclass="JSR223Sampler" testname="AddAndStop_createVariableforTGWorking" enabled="false">
+          <stringProp name="cacheKey">false</stringProp>
+          <stringProp name="filename"></stringProp>
+          <stringProp name="parameters"></stringProp>
+          <stringProp name="script">// Function to generate a random wait time between min and max milliseconds
+function doRandomWait() {
+//calculation to get 10 from current active threads
+//(1000/active users)
+//per
+randNumber = Math.random() * 100	
+if(randNumber&lt;1)
+{    log.warn(&quot;doing Min randomwait_ &quot;+ java.lang.Thread.currentThread().getName())
+	minWaitTimeMillis = 0;
+     maxWaitTimeMillis = 500;    
+}
+else if (randNumber&lt;5)
+{
+	minWaitTimeMillis = 1000;
+     maxWaitTimeMillis = 2000;  
+}
+else
+{
+	minWaitTimeMillis = 5000;
+    maxWaitTimeMillis = 10000;
+}
+
+    var randomWaitMillis = Math.floor(Math.random() * (maxWaitTimeMillis - minWaitTimeMillis + 1)) + minWaitTimeMillis;
+    java.lang.Thread.sleep(randomWaitMillis);
+    return true;
+}
+
+// Function to handle the logic for adding threads
+function handleThreadAddition(userCountToAdd) {
+    completedTime = parseInt(Date.now()) - parseInt(&quot;${TESTSTART.MS}&quot;);
+
+    if (props.get(&quot;actDuration&quot;) != null) {
+        ctx.getThreadGroup().setDuration(parseInt(props.get(&quot;actDuration&quot;)) - Math.floor(completedTime / 1000));
+    } else {
+        props.put(&quot;actDuration&quot;, ctx.getThreadGroup().getDuration());
+        ctx.getThreadGroup().setDuration(ctx.getThreadGroup().getDuration() - Math.floor(completedTime / 1000));
+    }
+// verify thread id to cwho //&amp;&amp; props.get(&quot;cwho&quot;).indexOf(java.lang.Thread.currentThread().getName()) == -1
+//add rampup logic
+
+	log.warn(props.get(&quot;cwho&quot;)+&quot;ADDING___by_() &quot;+ java.lang.Thread.currentThread().getName())
+	if(props.get(&quot;cwho&quot;).indexOf(java.lang.Thread.currentThread().getName())!==0) return;
+	log.warn(props.get(&quot;cwho&quot;)+&quot;ADDING___by_() &quot;+ java.lang.Thread.currentThread().getName())
+    for (var i = 0; (i &lt; userCountToAdd &amp;&amp; parseInt(props.get(&quot;cusercount&quot;)) &gt; ctx.getThreadGroup().getNumberOfThreads()  ); i++) {
+        ctx.getThreadGroup().addNewThread(1000, ctx.getEngine());
+        java.lang.Thread.sleep(6);
+    }
+}
+
+// Function to stop threads based on a specific condition
+function stopThreads(userCountToStop) {
+    firstRunningThread = 1;
+
+    for (var i = firstRunningThread; i &lt;= userCountToStop; i++) {
+        ctx.getThreadGroup().stopThread(java.lang.Thread.currentThread().getName().split(&quot;-&quot;)[0] + &quot;-&quot; + i, false);
+    }
+}
+
+//if (props.get(&quot;cusercount&quot;) == null) props.put(&quot;cusercount&quot;, &quot;1&quot;);
+if (props.get(&quot;cwho&quot;) == null) props.put(&quot;cwho&quot;, &quot;done&quot;);
+threadGrpName = java.lang.Thread.currentThread().getName().split(&quot; &quot;)[0]
+updatedUsercount = parseInt(props.get(threadGrpName));
+
+
+if (updatedUsercount !== null &amp;&amp; props.get(&quot;cwho&quot;).indexOf(&quot;true&quot;) == 0) {
+    if (updatedUsercount &gt; 0 &amp;&amp; updatedUsercount != ctx.getThreadGroup().getNumberOfThreads()) {
+          doRandomWait();
+          //log.warn(&quot;First IS&quot;+props.get(&quot;cwho&quot;)+&quot;__&quot;+java.lang.Thread.currentThread().getName())
+          if(props.get(&quot;cwho&quot;).indexOf(&quot;true&quot;)==0) props.put(&quot;cwho&quot;,&quot;false&quot;);
+          //log.warn(&quot;WHOVALUE IS&quot;+props.get(&quot;cwho&quot;)+&quot;__&quot;+java.lang.Thread.currentThread().getName()+&quot;==&quot;+updatedUsercount +&quot;==&quot;+ctx.getThreadGroup().getNumberOfThreads());
+		if(props.get(&quot;cwho&quot;).indexOf(&quot;false&quot;)!==0)
+		{
+			;//log.warn(java.lang.Thread.currentThread().getName()+&quot;  Came-- so exiting&quot;+ props.get(&quot;cwho&quot;).indexOf(&quot;false&quot;))
+		}
+		else
+		{
+			if(props.get(&quot;cwho&quot;).indexOf(&quot;false&quot;)==0) props.put(&quot;cwho&quot;, java.lang.Thread.currentThread().getName());
+			if (updatedUsercount &gt; ctx.getThreadGroup().getNumberOfThreads()) 
+			{                              
+			 addCount = updatedUsercount - ctx.getThreadGroup().getNumberOfThreads()
+			 handleThreadAddition(addCount);
+			 props.put(&quot;cwho&quot;, &quot;done&quot;);
+			} 
+			else if (updatedUsercount &lt; ctx.getThreadGroup().getNumberOfThreads()) 
+			{
+			 stopCount = ctx.getThreadGroup().getNumThreads() - updatedUsercount
+			 stopThreads(stopCount);    
+			 props.put(&quot;cwho&quot;, &quot;done&quot;);
+			}
+			else
+				log.warn(&quot;Unreachable code --- HOW did you get here&quot;)
+			 
+		}  	
+    }
+}
+//EOF
+</stringProp>
+          <stringProp name="scriptLanguage">javascript</stringProp>
+        </JSR223Sampler>
+        <hashTree>
+          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="false">
+            <stringProp name="ConstantTimer.delay">6000</stringProp>
+          </ConstantTimer>
+          <hashTree/>
+          <SyncTimer guiclass="TestBeanGUI" testclass="SyncTimer" testname="Synchronizing Timer" enabled="false">
+            <intProp name="groupSize">1</intProp>
+            <longProp name="timeoutInMs">0</longProp>
+          </SyncTimer>
+          <hashTree/>
+          <GaussianRandomTimer guiclass="GaussianRandomTimerGui" testclass="GaussianRandomTimer" testname="Gaussian Random Timer" enabled="false">
+            <stringProp name="ConstantTimer.delay">300</stringProp>
+            <stringProp name="RandomTimer.range">5000.0</stringProp>
+          </GaussianRandomTimer>
+          <hashTree/>
+        </hashTree>
+        <JSR223Sampler guiclass="TestBeanGUI" testclass="JSR223Sampler" testname="AddAndStop_OptimizedWorking" enabled="false">
+          <stringProp name="cacheKey">false</stringProp>
+          <stringProp name="filename"></stringProp>
+          <stringProp name="parameters"></stringProp>
+          <stringProp name="script">//cwho should be changed for thread specific value
+
+// Function to generate a random wait time between min and max milliseconds
+
+
+function doRandomWait() {
+//calculation to get 1 from current active threads
+//(1000/active users)
+//per
+randNumber = Math.random() * 100	
+if(randNumber&lt;1)
+{    log.warn(&quot;doing Min randomwait_ &quot;+ java.lang.Thread.currentThread().getName())
+	minWaitTimeMillis = 0;
+     maxWaitTimeMillis = 500;    
+}
+else if (randNumber&lt;5)
+{
+	minWaitTimeMillis = 1000;
+     maxWaitTimeMillis = 5000;  
+}
+else
+{
+	minWaitTimeMillis = 5000;
+    maxWaitTimeMillis = 10000;
+}
+
+    var randomWaitMillis = Math.floor(Math.random() * (maxWaitTimeMillis - minWaitTimeMillis + 1)) + minWaitTimeMillis;
+    java.lang.Thread.sleep(randomWaitMillis);
+    return true;
+}
+
+// Function to handle the logic for adding threads
+function handleThreadAddition(userCountToAdd) {
+    completedTime = parseInt(Date.now()) - parseInt(&quot;${TESTSTART.MS}&quot;);
+
+    if (props.get(&quot;actDuration&quot;) != null) {
+        ctx.getThreadGroup().setDuration(parseInt(props.get(&quot;actDuration&quot;)) - Math.floor(completedTime / 1000));
+    } else {
+        props.put(&quot;actDuration&quot;, ctx.getThreadGroup().getDuration());
+        ctx.getThreadGroup().setDuration(ctx.getThreadGroup().getDuration() - Math.floor(completedTime / 1000));
+    }
+// verify thread id to cwho //&amp;&amp; props.get(&quot;cwho&quot;).indexOf(java.lang.Thread.currentThread().getName()) == -1
+//add rampup logic
+
+	log.warn(props.get(&quot;cwho&quot;)+&quot;ADDING___by_() &quot;+ java.lang.Thread.currentThread().getName())
+	if(props.get(&quot;cwho&quot;).indexOf(java.lang.Thread.currentThread().getName())!==0) return;
+	log.warn(props.get(&quot;cwho&quot;)+&quot;ADDING___by_() &quot;+ java.lang.Thread.currentThread().getName())
+    for (var i = 0; (i &lt; userCountToAdd &amp;&amp; parseInt(props.get(&quot;cusercount&quot;)) &gt; ctx.getThreadGroup().getNumberOfThreads()  ); i++) {
+        ctx.getThreadGroup().addNewThread(1000, ctx.getEngine());
+        //java.lang.Thread.sleep(250);
+    }
+}
+
+// Function to stop threads based on a specific condition
+function stopThreads(userCountToStop) {
+    firstRunningThread = 1;
+	log.warn(props.get(&quot;cwho&quot;)+&quot;STOP___by_() &quot;+ java.lang.Thread.currentThread().getName())
+	if(props.get(&quot;cwho&quot;).indexOf(java.lang.Thread.currentThread().getName())!==0) return;
+	log.warn(props.get(&quot;cwho&quot;)+&quot;Stop___by_() &quot;+ java.lang.Thread.currentThread().getName())
+    for (var i = firstRunningThread; i &lt;= userCountToStop; i++) {
+        ctx.getThreadGroup().stopThread(java.lang.Thread.currentThread().getName().split(&quot;-&quot;)[0] + &quot;-&quot; + i, false);
+    }
+}
+
+//if (props.get(&quot;cusercount&quot;) == null) props.put(&quot;cusercount&quot;, &quot;1&quot;);
+if (props.get(&quot;cwho&quot;) == null) props.put(&quot;cwho&quot;, &quot;done&quot;);
+threadGrpName = java.lang.Thread.currentThread().getName().split(&quot; &quot;)[0]
+updatedUsercount = parseInt(props.get(threadGrpName));
+
+
+if (updatedUsercount !== null &amp;&amp; props.get(&quot;cwho&quot;).indexOf(&quot;true&quot;) == 0) {
+    if (updatedUsercount &gt; 0 &amp;&amp; updatedUsercount != ctx.getThreadGroup().getNumberOfThreads()) {
+          doRandomWait();
+          //log.warn(&quot;First IS&quot;+props.get(&quot;cwho&quot;)+&quot;__&quot;+java.lang.Thread.currentThread().getName())
+          if(props.get(&quot;cwho&quot;).indexOf(&quot;true&quot;)==0) props.put(&quot;cwho&quot;,&quot;false&quot;);
+          //else exit;
+          // eliminating concurrent users
+          //log.warn(&quot;WHOVALUE IS&quot;+props.get(&quot;cwho&quot;)+&quot;__&quot;+java.lang.Thread.currentThread().getName()+&quot;==&quot;+updatedUsercount +&quot;==&quot;+ctx.getThreadGroup().getNumberOfThreads());
+		if(props.get(&quot;cwho&quot;).indexOf(&quot;false&quot;)!==0)
+		{// Never comes here Unreachable
+			;//log.warn(java.lang.Thread.currentThread().getName()+&quot;  Came-- so exiting&quot;+ props.get(&quot;cwho&quot;).indexOf(&quot;false&quot;))
+		}
+		else
+		{
+			if(props.get(&quot;cwho&quot;).indexOf(&quot;false&quot;)==0) props.put(&quot;cwho&quot;, java.lang.Thread.currentThread().getName());
+			if (updatedUsercount &gt; ctx.getThreadGroup().getNumberOfThreads()) 
+			{                              
+			 addCount = updatedUsercount - ctx.getThreadGroup().getNumberOfThreads()
+			 handleThreadAddition(addCount);
+			 props.put(&quot;cwho&quot;, &quot;done&quot;);
+			} 
+			else if (updatedUsercount &lt; ctx.getThreadGroup().getNumberOfThreads()) 
+			{
+			 stopCount = ctx.getThreadGroup().getNumThreads() - updatedUsercount
+			 stopThreads(stopCount);    
+			 props.put(&quot;cwho&quot;, &quot;done&quot;);
+			}
+			else if(updatedUsercount == ctx.getThreadGroup().getNumberOfThreads())
+				props.put(&quot;cwho&quot;, &quot;done&quot;);
+			else 
+				log.warn(&quot;Unreachable code --- HOW did you get here&quot;)
+			 
+		}  	
+    }
+}
+//EOF
+</stringProp>
+          <stringProp name="scriptLanguage">javascript</stringProp>
+        </JSR223Sampler>
+        <hashTree>
+          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="false">
+            <stringProp name="ConstantTimer.delay">6000</stringProp>
+          </ConstantTimer>
+          <hashTree/>
+          <SyncTimer guiclass="TestBeanGUI" testclass="SyncTimer" testname="Synchronizing Timer" enabled="false">
+            <intProp name="groupSize">1</intProp>
+            <longProp name="timeoutInMs">0</longProp>
+          </SyncTimer>
+          <hashTree/>
+          <GaussianRandomTimer guiclass="GaussianRandomTimerGui" testclass="GaussianRandomTimer" testname="Gaussian Random Timer" enabled="false">
+            <stringProp name="ConstantTimer.delay">300</stringProp>
+            <stringProp name="RandomTimer.range">5000.0</stringProp>
+          </GaussianRandomTimer>
+          <hashTree/>
+        </hashTree>
+        <JSR223Sampler guiclass="TestBeanGUI" testclass="JSR223Sampler" testname="AddAndStop_OptimizedWorkingV2" enabled="false">
+          <stringProp name="cacheKey">false</stringProp>
+          <stringProp name="filename"></stringProp>
+          <stringProp name="parameters"></stringProp>
+          <stringProp name="script">//cwho should be changed for thread specific value
+
+// Function to generate a random wait time between min and max milliseconds
+
+
+function doRandomWait() {
+//calculation to get 1 from current active threads
+//(1000/active users)
+//per
+randNumber = Math.random() * 100	
+if(randNumber&lt;1)
+{    log.warn(&quot;doing Min randomwait_ &quot;+ java.lang.Thread.currentThread().getName())
+	minWaitTimeMillis = 0;
+     maxWaitTimeMillis = 500;    
+}
+else if (randNumber&lt;5)
+{
+	minWaitTimeMillis = 1000;
+     maxWaitTimeMillis = 5000;  
+}
+else
+{
+	minWaitTimeMillis = 5000;
+    maxWaitTimeMillis = 10000;
+}
+
+    var randomWaitMillis = Math.floor(Math.random() * (maxWaitTimeMillis - minWaitTimeMillis + 1)) + minWaitTimeMillis;
+    java.lang.Thread.sleep(randomWaitMillis);
+    return true;
+}
+
+// Function to handle the logic for adding threads
+function handleThreadAddition(userCountToAdd,updatedUsercount) {
+    completedTime = parseInt(Date.now()) - parseInt(&quot;${TESTSTART.MS}&quot;);
+ 	durationName = &quot;actDuration_&quot;+ java.lang.Thread.currentThread().getName().split(&quot; &quot;)[0]
+ 	rampupName=&quot;rampup_&quot;+java.lang.Thread.currentThread().getName().split(&quot; &quot;)[0]
+    if (props.get(durationName) != null) {
+        ctx.getThreadGroup().setDuration(parseInt(props.get(durationName)) - Math.floor(completedTime / 1000));
+    } else {
+        props.put(durationName, ctx.getThreadGroup().getDuration());
+        ctx.getThreadGroup().setDuration(ctx.getThreadGroup().getDuration() - Math.floor(completedTime / 1000));
+    }
+// verify thread id to cwho //&amp;&amp; props.get(&quot;cwho&quot;).indexOf(java.lang.Thread.currentThread().getName()) == -1
+//add rampup logic
+
+	log.warn(props.get(flagName)+&quot;ADDING___by_() &quot;+ java.lang.Thread.currentThread().getName())
+	if(props.get(flagName).indexOf(java.lang.Thread.currentThread().getName())!==0) return;
+	
+	rampup = Math.floor((props.get(rampupName)/userCountToAdd)*1000);
+	log.warn(props.get(flagName)+&quot;ADDING___by_() &quot;+ java.lang.Thread.currentThread().getName()+&quot; With rampup &quot;+rampup)
+    for (var i = 0; (i &lt; userCountToAdd &amp;&amp; updatedUsercount &gt; ctx.getThreadGroup().getNumberOfThreads()  ); i++) {
+        ctx.getThreadGroup().addNewThread(1000, ctx.getEngine());
+        java.lang.Thread.sleep(rampup);
+    }
+}
+
+// Function to stop threads based on a specific condition
+function stopThreads(userCountToStop) {
+    firstRunningThread = 1;
+	log.warn(props.get(flagName)+&quot;STOP___by_() &quot;+ java.lang.Thread.currentThread().getName())
+	if(props.get(flagName).indexOf(java.lang.Thread.currentThread().getName())!==0) return;
+	log.warn(props.get(flagName)+&quot;Stop___by_() &quot;+ java.lang.Thread.currentThread().getName())
+    for (var i = firstRunningThread; i &lt;= userCountToStop; i++) {
+        ctx.getThreadGroup().stopThread(java.lang.Thread.currentThread().getName().split(&quot;-&quot;)[0] + &quot;-&quot; + i, false);
+    }
+}
+
+
+
+
+
+//if (props.get(&quot;cusercount&quot;) == null) props.put(&quot;cusercount&quot;, &quot;1&quot;);
+threadGrpName = java.lang.Thread.currentThread().getName().split(&quot; &quot;)[0]
+updatedUsercount = parseInt(props.get(threadGrpName));
+flagName=&quot;cwho_&quot;+threadGrpName;
+
+if (props.get(flagName) == null) props.put(flagName, &quot;done&quot;);
+
+if (updatedUsercount !== null &amp;&amp; props.get(flagName).indexOf(&quot;true&quot;) == 0 &amp;&amp; updatedUsercount != ctx.getThreadGroup().getNumberOfThreads() ) {
+    if (updatedUsercount &gt; 0) {
+          doRandomWait();
+          //log.warn(&quot;First IS&quot;+props.get(&quot;cwho&quot;)+&quot;__&quot;+java.lang.Thread.currentThread().getName())
+          if(props.get(flagName).indexOf(&quot;true&quot;)==0) props.put(flagName,&quot;false&quot;);
+          //else exit;
+          // eliminating concurrent users
+          //log.warn(&quot;WHOVALUE IS&quot;+props.get(&quot;cwho&quot;)+&quot;__&quot;+java.lang.Thread.currentThread().getName()+&quot;==&quot;+updatedUsercount +&quot;==&quot;+ctx.getThreadGroup().getNumberOfThreads());
+		
+		if(props.get(flagName).indexOf(&quot;false&quot;)==0)
+		{
+			if(props.get(flagName).indexOf(&quot;false&quot;)==0) props.put(flagName, java.lang.Thread.currentThread().getName());
+			if (updatedUsercount &gt; ctx.getThreadGroup().getNumberOfThreads()) 
+			{                              
+			 addCount = updatedUsercount - ctx.getThreadGroup().getNumberOfThreads()
+			 handleThreadAddition(addCount,updatedUsercount);
+			// props.put(flagName, &quot;done&quot;);
+			} 
+			else if (updatedUsercount &lt; ctx.getThreadGroup().getNumberOfThreads()) 
+			{
+			 stopCount = ctx.getThreadGroup().getNumThreads() - updatedUsercount
+			 stopThreads(stopCount);    
+			// if(updatedUsercount == ctx.getThreadGroup().getNumberOfThreads()) props.put(flagName, &quot;done&quot;);
+			}
+			else 
+				log.warn(&quot;Unreachable code --- HOW did you get here&quot;)
+			if(updatedUsercount &lt;= ctx.getThreadGroup().getNumberOfThreads())
+				props.put(flagName, &quot;done&quot;);
+			
+			 
+		}  	
+    }
+}
+//EOF
+</stringProp>
+          <stringProp name="scriptLanguage">javascript</stringProp>
+        </JSR223Sampler>
+        <hashTree>
+          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="false">
+            <stringProp name="ConstantTimer.delay">6000</stringProp>
+          </ConstantTimer>
+          <hashTree/>
+          <SyncTimer guiclass="TestBeanGUI" testclass="SyncTimer" testname="Synchronizing Timer" enabled="false">
+            <intProp name="groupSize">1</intProp>
+            <longProp name="timeoutInMs">0</longProp>
+          </SyncTimer>
+          <hashTree/>
+          <GaussianRandomTimer guiclass="GaussianRandomTimerGui" testclass="GaussianRandomTimer" testname="Gaussian Random Timer" enabled="false">
+            <stringProp name="ConstantTimer.delay">300</stringProp>
+            <stringProp name="RandomTimer.range">5000.0</stringProp>
+          </GaussianRandomTimer>
+          <hashTree/>
+        </hashTree>
+        <JSR223Sampler guiclass="TestBeanGUI" testclass="JSR223Sampler" testname="AddAndStop_WorkingV2_byAuto_AddComments" enabled="false">
+          <stringProp name="cacheKey">false</stringProp>
+          <stringProp name="filename"></stringProp>
+          <stringProp name="parameters"></stringProp>
+          <stringProp name="script">// Define a function to generate a random wait time between min and max milliseconds
+function generateRandomWaitTime() {
+    // Calculate a random number
+    var randNumber = Math.random() * 100;
+
+    // Define wait time ranges based on the random number
+    var minWaitTimeMillis, maxWaitTimeMillis;
+
+    if (randNumber &lt; 1) {
+        log.warn(&quot;Setting Min Random Wait: &quot; + java.lang.Thread.currentThread().getName());
+        minWaitTimeMillis = 0;
+        maxWaitTimeMillis = 500;
+    } else if (randNumber &lt; 5) {
+        minWaitTimeMillis = 1000;
+        maxWaitTimeMillis = 5000;
+    } else {
+        minWaitTimeMillis = 5000;
+        maxWaitTimeMillis = 10000;
+    }
+
+    // Calculate a random wait time within the defined range
+    var randomWaitMillis = Math.floor(Math.random() * (maxWaitTimeMillis - minWaitTimeMillis + 1)) + minWaitTimeMillis;
+    java.lang.Thread.sleep(randomWaitMillis);
+
+    return true;
+}
+
+// Define a function to handle the logic for adding threads
+function handleThreadAddition(userCountToAdd, updatedUserCount) {
+    var completedTime = parseInt(Date.now()) - parseInt(&quot;${TESTSTART.MS}&quot;);
+    var durationName = &quot;actDuration_&quot; + java.lang.Thread.currentThread().getName().split(&quot; &quot;)[0];
+    var rampupName = &quot;rampup_&quot; + java.lang.Thread.currentThread().getName().split(&quot; &quot;)[0];
+
+    // Adjust thread group duration based on the elapsed time
+    if (props.get(durationName) != null) {
+        ctx.getThreadGroup().setDuration(parseInt(props.get(durationName)) - Math.floor(completedTime / 1000));
+    } else {
+        props.put(durationName, ctx.getThreadGroup().getDuration());
+        ctx.getThreadGroup().setDuration(ctx.getThreadGroup().getDuration() - Math.floor(completedTime / 1000));
+    }
+
+    // Add threads with ramp-up logic
+    var flagName = &quot;cwho_&quot; + java.lang.Thread.currentThread().getName().split(&quot; &quot;)[0];
+    log.warn(props.get(flagName) + &quot; ADDING by &quot; + java.lang.Thread.currentThread().getName());
+
+    if (props.get(flagName).indexOf(java.lang.Thread.currentThread().getName()) !== 0) return;
+
+    var rampup = Math.floor((props.get(rampupName) / userCountToAdd) * 1000);
+    log.warn(props.get(flagName) + &quot; ADDING by &quot; + java.lang.Thread.currentThread().getName() + &quot; With ramp-up &quot; + rampup);
+
+    for (var i = 0; (i &lt; userCountToAdd &amp;&amp; updatedUserCount &gt; ctx.getThreadGroup().getNumberOfThreads()); i++) {
+        ctx.getThreadGroup().addNewThread(1000, ctx.getEngine());
+        java.lang.Thread.sleep(rampup);
+    }
+}
+
+// Define a function to stop threads based on a specific condition
+function stopThreads(userCountToStop) {
+    var firstRunningThread = 1;
+    var flagName = &quot;cwho_&quot; + java.lang.Thread.currentThread().getName().split(&quot; &quot;)[0];
+
+    log.warn(props.get(flagName) + &quot; STOP by &quot; + java.lang.Thread.currentThread().getName());
+
+    if (props.get(flagName).indexOf(java.lang.Thread.currentThread().getName()) !== 0) return;
+
+    log.warn(props.get(flagName) + &quot; Stop by &quot; + java.lang.Thread.currentThread().getName());
+
+    for (var i = firstRunningThread; i &lt;= userCountToStop; i++) {
+        ctx.getThreadGroup().stopThread(java.lang.Thread.currentThread().getName().split(&quot;-&quot;)[0] + &quot;-&quot; + i, false);
+    }
+}
+
+// Main logic
+var threadGroupName = java.lang.Thread.currentThread().getName().split(&quot; &quot;)[0];
+var updatedUserCount = parseInt(props.get(threadGroupName));
+var flagName = &quot;cwho_&quot; + threadGroupName;
+
+ if (props.get(flagName) == null) props.put(flagName, &quot;done&quot;);
+//if (updatedUserCount &lt;= ctx.getThreadGroup().getNumberOfThreads()) props.put(flagName, &quot;done&quot;); // set flag to done once current user count is equal or more than expected user count
+
+if (updatedUserCount !== null &amp;&amp; updatedUserCount &gt; 0 &amp;&amp; props.get(flagName).indexOf(&quot;true&quot;) == 0 &amp;&amp; (props.get(flagName).indexOf(threadGroupName) !== 0)  &amp;&amp; updatedUserCount != ctx.getThreadGroup().getNumberOfThreads()) {  
+        
+        // random wait to ensure only few users go first in case of concurrency
+        generateRandomWaitTime();
+        if (props.get(flagName).indexOf(&quot;true&quot;) == 0)  props.put(flagName, &quot;false&quot;);// Redundant check to avoid concurrent users // change state only if current state is true (new)
+
+       
+	   
+        if (props.get(flagName).indexOf(&quot;false&quot;) == 0) {
+            if (props.get(flagName).indexOf(&quot;false&quot;) == 0) props.put(flagName, java.lang.Thread.currentThread().getName()); // Redundant check to avoid concurrent users
+
+            if (updatedUserCount &gt; ctx.getThreadGroup().getNumberOfThreads()) {
+                var addCount = updatedUserCount - ctx.getThreadGroup().getNumberOfThreads();
+                handleThreadAddition(addCount, updatedUserCount);
+                if (updatedUserCount &lt;= ctx.getThreadGroup().getNumberOfThreads()) props.put(flagName, &quot;done&quot;);
+                
+            } else if (updatedUserCount &lt; ctx.getThreadGroup().getNumberOfThreads()) {
+                var stopCount = ctx.getThreadGroup().getNumThreads() - updatedUserCount;
+                stopThreads(stopCount);
+                if (updatedUserCount &gt;= ctx.getThreadGroup().getNumThreads()) props.put(flagName, &quot;done&quot;);
+            } 
+            else {
+                log.warn(&quot;Unreachable code --- HOW did you get here--happens only during concurrency&quot;);
+            }
+            
+        }
+        
+}
+// End of File
+</stringProp>
+          <stringProp name="scriptLanguage">javascript</stringProp>
+        </JSR223Sampler>
+        <hashTree>
+          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="false">
+            <stringProp name="ConstantTimer.delay">6000</stringProp>
+          </ConstantTimer>
+          <hashTree/>
+          <SyncTimer guiclass="TestBeanGUI" testclass="SyncTimer" testname="Synchronizing Timer" enabled="false">
+            <intProp name="groupSize">1</intProp>
+            <longProp name="timeoutInMs">0</longProp>
+          </SyncTimer>
+          <hashTree/>
+          <GaussianRandomTimer guiclass="GaussianRandomTimerGui" testclass="GaussianRandomTimer" testname="Gaussian Random Timer" enabled="false">
+            <stringProp name="ConstantTimer.delay">300</stringProp>
+            <stringProp name="RandomTimer.range">5000.0</stringProp>
+          </GaussianRandomTimer>
+          <hashTree/>
+        </hashTree>
+        <JSR223Sampler guiclass="TestBeanGUI" testclass="JSR223Sampler" testname="AddAndStop_WorkingV3" enabled="false">
+          <stringProp name="cacheKey">false</stringProp>
+          <stringProp name="filename"></stringProp>
+          <stringProp name="parameters"></stringProp>
+          <stringProp name="script">//code has issues if data changed while rampup is in progress - user is stuck
+//if intial user count is same as current user count this does not work
+// SOlve problem of current thread stopping itself
+
+// Define a function to generate a random wait time between min and max milliseconds
+function generateRandomWaitTime() {
+    // Calculate a random number
+    var randNumber = Math.random() * 100;
+
+    // Define wait time ranges based on the random number
+    var minWaitTimeMillis, maxWaitTimeMillis;
+
+    if (randNumber &lt; 1) {
+        log.warn(&quot;Setting Min Random Wait: &quot; + java.lang.Thread.currentThread().getName());
+        minWaitTimeMillis = 0;
+        maxWaitTimeMillis = 500;
+    } else if (randNumber &lt; 5) {
+        minWaitTimeMillis = 1000;
+        maxWaitTimeMillis = 5000;
+    } else {
+        minWaitTimeMillis = 5000;
+        maxWaitTimeMillis = 10000;
+    }
+
+    // Calculate a random wait time within the defined range
+    var randomWaitMillis = Math.floor(Math.random() * (maxWaitTimeMillis - minWaitTimeMillis + 1)) + minWaitTimeMillis;
+    java.lang.Thread.sleep(randomWaitMillis);
+
+    return true;
+}
+
+// Define a function to handle the logic for adding threads
+function handleThreadAddition(userCountToAdd, updatedUserCount) {
+    var completedTime = parseInt(Date.now()) - parseInt(&quot;${TESTSTART.MS}&quot;);
+    var durationName = &quot;actDuration_&quot; + java.lang.Thread.currentThread().getName().split(&quot; &quot;)[0];
+    var rampupName = &quot;rampup_&quot; + java.lang.Thread.currentThread().getName().split(&quot; &quot;)[0];
+
+    // Adjust thread group duration based on the elapsed time
+    if (props.get(durationName) != null) {
+        ctx.getThreadGroup().setDuration(parseInt(props.get(durationName)) - Math.floor(completedTime / 1000));
+    } else {
+        props.put(durationName, ctx.getThreadGroup().getDuration());
+        ctx.getThreadGroup().setDuration(ctx.getThreadGroup().getDuration() - Math.floor(completedTime / 1000));
+    }
+
+    // Add threads with ramp-up logic
+    var flagName = &quot;cwho_&quot; + java.lang.Thread.currentThread().getName().split(&quot; &quot;)[0];
+    log.warn(props.get(flagName) + &quot; ADDING by &quot; + java.lang.Thread.currentThread().getName());
+
+    if (props.get(flagName).indexOf(java.lang.Thread.currentThread().getName()) !== 0) return;
+
+    var rampup = Math.floor((props.get(rampupName) / userCountToAdd) * 1000);
+    log.warn(props.get(flagName) + &quot; ADDING by &quot; + java.lang.Thread.currentThread().getName() + &quot; With ramp-up &quot; + rampup);
+
+    for (var i = 0; (i &lt; userCountToAdd &amp;&amp; updatedUserCount &gt; ctx.getThreadGroup().getNumberOfThreads()); i++) {
+        ctx.getThreadGroup().addNewThread(1000, ctx.getEngine());
+        java.lang.Thread.sleep(rampup);
+    }
+	java.lang.Thread.sleep(2000);
+     if ((updatedUserCount &lt;= parseInt(ctx.getThreadGroup().getNumberOfThreads()))) props.put(flagName, &quot;done&quot;);
+    
+}
+
+// Define a function to stop threads based on a specific condition
+function stopThreads(userCountToStop,updatedUserCount) {
+    var firstRunningThread = 1;
+    var flagName = &quot;cwho_&quot; + java.lang.Thread.currentThread().getName().split(&quot; &quot;)[0];
+
+    log.warn(props.get(flagName) + &quot; STOP by &quot; + java.lang.Thread.currentThread().getName());
+
+    if (props.get(flagName).indexOf(java.lang.Thread.currentThread().getName()) !== 0) return;
+
+    log.warn(props.get(flagName) + &quot; Stop by &quot; + java.lang.Thread.currentThread().getName());
+
+    for (var i = firstRunningThread; i &lt;= userCountToStop; i++) {
+        
+        ctx.getThreadGroup().stopThread(java.lang.Thread.currentThread().getName().split(&quot;-&quot;)[0] + &quot;-&quot; + i, false);//true  -- will kill the thread working on stopping thread
+    }
+    java.lang.Thread.sleep(20000);
+    log.warn(&quot;Stopdone:?? &quot; +updatedUserCount+&quot;-&quot;+parseInt(ctx.getThreadGroup().getNumberOfThreads()) +&quot;value&quot;+ (updatedUserCount &gt;= parseInt(ctx.getThreadGroup().getNumberOfThreads())));
+    if (updatedUserCount+1 &gt;= parseInt(ctx.getThreadGroup().getNumberOfThreads())) //+1 to there will be an extra thread if the current thread is also stopped// Not tested for Force stop
+    		props.put(flagName, &quot;done&quot;);  
+    
+}
+
+// Main logic
+var threadGroupName = java.lang.Thread.currentThread().getName().split(&quot; &quot;)[0];
+var updatedUserCount = parseInt(props.get(threadGroupName));
+var flagName = &quot;cwho_&quot; + threadGroupName;
+
+ if (props.get(flagName) == null) props.put(flagName, &quot;done&quot;);
+//if (updatedUserCount &lt;= ctx.getThreadGroup().getNumberOfThreads()) props.put(flagName, &quot;done&quot;); // set flag to done once current user count is equal or more than expected user count
+
+if (updatedUserCount !== null &amp;&amp; updatedUserCount &gt; 0 &amp;&amp; props.get(flagName).indexOf(&quot;true&quot;) == 0 &amp;&amp; (props.get(flagName).indexOf(threadGroupName) !== 0)  &amp;&amp; updatedUserCount != ctx.getThreadGroup().getNumberOfThreads()) {  
+	threadName = java.lang.Thread.currentThread().getName();
+        //log.warn(&quot;BeforeWait &quot; + threadName);
+        // random wait to ensure only few users go first in case of concurrency
+        generateRandomWaitTime();
+        if (props.get(flagName).indexOf(&quot;true&quot;) == 0)  // change state only if current state is true (new)
+        {
+        	//props.put(flagName, &quot;false&quot;); // // Redundant check to avoid concurrent users //Set this immediately to avoid more users entering the 
+        	log.warn(&quot;AfterWait &quot; + threadName);
+        	
+	       //// if (props.get(flagName).indexOf(&quot;true&quot;) == 0)    	
+		   props.put(flagName, threadName); // Redundant check to avoid concurrent users
+
+            if (updatedUserCount &gt; ctx.getThreadGroup().getNumberOfThreads()) {
+                var addCount = updatedUserCount - ctx.getThreadGroup().getNumberOfThreads();
+                handleThreadAddition(addCount, updatedUserCount);
+                //java.lang.Thread.sleep(2000); // wait for few seconds for all threads to be up and running
+                //log.warn(&quot;AddDone?? &quot; +updatedUserCount+&quot;-&quot;+parseInt(ctx.getThreadGroup().getNumberOfThreads())+ (updatedUserCount &lt;= parseInt(ctx.getThreadGroup().getNumberOfThreads())));
+                
+//                if ((updatedUserCount &lt;= parseInt(ctx.getThreadGroup().getNumberOfThreads()))) props.put(flagName, &quot;done&quot;);
+              //  {
+//log.warn(&quot;InsideIf?? &quot; + (updatedUserCount &gt;= parseInt(ctx.getThreadGroup().getNumThreads())));
+              //  }
+                
+            } else if (updatedUserCount &lt; ctx.getThreadGroup().getNumberOfThreads()) {
+                var stopCount = ctx.getThreadGroup().getNumThreads() - updatedUserCount;
+                stopThreads(stopCount,updatedUserCount);
+               // java.lang.Thread.sleep(2000); // wait for few seconds for all threads to be up and running
+//                log.warn(&quot;stopdone?? &quot; + (updatedUserCount &gt;= parseInt(ctx.getThreadGroup().getNumThreads())));
+               // if (updatedUserCount &gt;= parseInt(ctx.getThreadGroup().getNumThreads())) props.put(flagName, &quot;done&quot;);
+            } 
+            else {
+                log.warn(&quot;Unreachable code --- HOW did you get here--happens only during concurrency&quot;);
+            }
+		  
+	       
+            
+        
+        }
+}
+// End of File
+</stringProp>
+          <stringProp name="scriptLanguage">javascript</stringProp>
+        </JSR223Sampler>
+        <hashTree>
+          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="false">
+            <stringProp name="ConstantTimer.delay">3000</stringProp>
+          </ConstantTimer>
+          <hashTree/>
+          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="false">
+            <stringProp name="ConstantTimer.delay">6000</stringProp>
+          </ConstantTimer>
+          <hashTree/>
+          <SyncTimer guiclass="TestBeanGUI" testclass="SyncTimer" testname="Synchronizing Timer" enabled="false">
+            <intProp name="groupSize">1</intProp>
+            <longProp name="timeoutInMs">0</longProp>
+          </SyncTimer>
+          <hashTree/>
+          <GaussianRandomTimer guiclass="GaussianRandomTimerGui" testclass="GaussianRandomTimer" testname="Gaussian Random Timer" enabled="false">
+            <stringProp name="ConstantTimer.delay">300</stringProp>
+            <stringProp name="RandomTimer.range">5000.0</stringProp>
+          </GaussianRandomTimer>
+          <hashTree/>
+        </hashTree>
+        <JSR223Sampler guiclass="TestBeanGUI" testclass="JSR223Sampler" testname="AddAndStop_WorkingV3_Autocommented" enabled="true">
+          <stringProp name="cacheKey">false</stringProp>
+          <stringProp name="filename"></stringProp>
+          <stringProp name="parameters"></stringProp>
+          <stringProp name="script">// if the current thread has to be stopped??
+// Define a function to generate a random wait time between min and max milliseconds
+// Main logic
+var threadGroupName = java.lang.Thread.currentThread().getName().split(&quot; &quot;)[0];
+var flagName = &quot;cwho_&quot; + threadGroupName;
+
+if (props.get(flagName) == null ) {
+	props.put(flagName, &quot;done&quot;); // || (updatedUserCount == parseInt(ctx.getThreadGroup().getNumberOfThreads()))  ensures state does not stay at &quot;true&quot;
+	props.put(threadGroupName,ctx.getThreadGroup().getNumberOfThreads());
+}
+var updatedUserCount = parseInt(props.get(threadGroupName));
+
+   
+if (updatedUserCount !== null &amp;&amp; updatedUserCount &gt; 0 &amp;&amp; props.get(flagName).indexOf(&quot;true&quot;) == 0 &amp;&amp;
+    (props.get(flagName).indexOf(threadGroupName) !== 0) &amp;&amp; updatedUserCount != ctx.getThreadGroup().getNumberOfThreads()) {
+
+	if(updatedUserCount == parseInt(ctx.getThreadGroup().getNumberOfThreads()))
+		props.put(flagName, &quot;done&quot;);
+
+		
+    var threadName = java.lang.Thread.currentThread().getName();
+    generateRandomWaitTime();
+
+    if (props.get(flagName).indexOf(&quot;true&quot;) == 0) {
+        log.warn(&quot;AfterWait &quot; + threadName);
+
+        props.put(flagName, threadName);
+
+        if (updatedUserCount &gt; ctx.getThreadGroup().getNumberOfThreads()) {
+            var addCount = updatedUserCount - ctx.getThreadGroup().getNumberOfThreads();
+            handleThreadAddition(addCount, updatedUserCount);
+
+        } else if (updatedUserCount &lt; ctx.getThreadGroup().getNumberOfThreads()) {
+            var stopCount = ctx.getThreadGroup().getNumThreads() - updatedUserCount;
+            stopThreads(stopCount, updatedUserCount);
+        } 
+        }
+        else {
+            log.info(&quot;Unreachable code --- HOW did you get here--happens only during concurrency&quot;);
+        }
+    
+}
+
+
+function generateRandomWaitTime() {
+    var randNumber = Math.random() * 100;
+    var minWaitTimeMillis, maxWaitTimeMillis;
+
+    if (randNumber &lt; 1) {
+        log.warn(&quot;Setting Min Random Wait: &quot; + java.lang.Thread.currentThread().getName());
+        minWaitTimeMillis = 0;
+        maxWaitTimeMillis = 500;
+    } else if (randNumber &lt; 5) {
+        minWaitTimeMillis = 1000;
+        maxWaitTimeMillis = 5000;
+    } else {
+        minWaitTimeMillis = 5000;
+        maxWaitTimeMillis = 10000;
+    }
+
+    var randomWaitMillis = Math.floor(Math.random() * (maxWaitTimeMillis - minWaitTimeMillis + 1)) + minWaitTimeMillis;
+    java.lang.Thread.sleep(randomWaitMillis);
+
+    return true;
+}
+
+// Define a function to handle the logic for adding threads
+function handleThreadAddition(userCountToAdd, updatedUserCount) {
+    var completedTime = parseInt(Date.now()) - parseInt(&quot;${TESTSTART.MS}&quot;);
+    var durationName = &quot;actDuration_&quot; + java.lang.Thread.currentThread().getName().split(&quot; &quot;)[0];
+    var rampupName = &quot;rampup_&quot; + java.lang.Thread.currentThread().getName().split(&quot; &quot;)[0];
+
+    if (props.get(durationName) != null) {
+        ctx.getThreadGroup().setDuration(parseInt(props.get(durationName)) - Math.floor(completedTime / 1000));
+    } else {
+        props.put(durationName, ctx.getThreadGroup().getDuration());
+        ctx.getThreadGroup().setDuration(ctx.getThreadGroup().getDuration() - Math.floor(completedTime / 1000));
+    }
+
+ 
+    
+
+    var flagName = &quot;cwho_&quot; + java.lang.Thread.currentThread().getName().split(&quot; &quot;)[0];
+
+	log.warn(props.get(flagName) + &quot; ADDING by &quot; + java.lang.Thread.currentThread().getName());
+	
+// Add Logic to check if the given thread Id is active. Else set the cwho prop to current thread and continue without retunring
+    if (props.get(flagName).indexOf(java.lang.Thread.currentThread().getName()) !== 0) return;
+    var rampup = Math.floor((props.get(rampupName) / userCountToAdd) * 1000);
+
+    log.warn(props.get(flagName) + &quot; ADDING by &quot; + java.lang.Thread.currentThread().getName() + &quot; With ramp-up &quot; + rampup);
+    
+    for (var i = 0; (i &lt; userCountToAdd &amp;&amp; updatedUserCount &gt; ctx.getThreadGroup().getNumberOfThreads()); i++) {
+        ctx.getThreadGroup().addNewThread(1000, ctx.getEngine());
+        java.lang.Thread.sleep(rampup);
+    }
+    java.lang.Thread.sleep(2000);
+    if ((updatedUserCount &lt;= parseInt(ctx.getThreadGroup().getNumberOfThreads()))) props.put(flagName, &quot;done&quot;);
+}
+
+// Define a function to stop threads based on a specific condition
+function stopThreads(userCountToStop, updatedUserCount) {
+    var firstRunningThread = 1;
+    var flagName = &quot;cwho_&quot; + java.lang.Thread.currentThread().getName().split(&quot; &quot;)[0];
+    log.warn(props.get(flagName) + &quot; STOP by &quot; + java.lang.Thread.currentThread().getName());
+    if (props.get(flagName).indexOf(java.lang.Thread.currentThread().getName()) !== 0) return;
+	  log.warn(props.get(flagName) + &quot; Stop by &quot; + java.lang.Thread.currentThread().getName());
+    for (var i = firstRunningThread; i &lt;= userCountToStop; i++) {
+        ctx.getThreadGroup().stopThread(java.lang.Thread.currentThread().getName().split(&quot;-&quot;)[0] + &quot;-&quot; + i, false);
+    }
+    java.lang.Thread.sleep(20000);
+
+    if (updatedUserCount + 1 &gt;= parseInt(ctx.getThreadGroup().getNumberOfThreads())) {
+        props.put(flagName, &quot;done&quot;);
+    }
+}
+
+
+// End of File
+</stringProp>
+          <stringProp name="scriptLanguage">javascript</stringProp>
+        </JSR223Sampler>
+        <hashTree>
+          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="false">
+            <stringProp name="ConstantTimer.delay">3000</stringProp>
+          </ConstantTimer>
+          <hashTree/>
+          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="false">
+            <stringProp name="ConstantTimer.delay">6000</stringProp>
+          </ConstantTimer>
+          <hashTree/>
+          <SyncTimer guiclass="TestBeanGUI" testclass="SyncTimer" testname="Synchronizing Timer" enabled="false">
+            <intProp name="groupSize">1</intProp>
+            <longProp name="timeoutInMs">0</longProp>
+          </SyncTimer>
+          <hashTree/>
+          <GaussianRandomTimer guiclass="GaussianRandomTimerGui" testclass="GaussianRandomTimer" testname="Gaussian Random Timer" enabled="false">
+            <stringProp name="ConstantTimer.delay">300</stringProp>
+            <stringProp name="RandomTimer.range">5000.0</stringProp>
+          </GaussianRandomTimer>
+          <hashTree/>
+        </hashTree>
+        <CriticalSectionController guiclass="CriticalSectionControllerGui" testclass="CriticalSectionController" testname="Critical Section Controller" enabled="false">
+          <stringProp name="CriticalSectionController.lockName">global_lock</stringProp>
+        </CriticalSectionController>
+        <hashTree/>
+        <JSR223Sampler guiclass="TestBeanGUI" testclass="JSR223Sampler" testname="runningThread" enabled="false">
+          <stringProp name="cacheKey">true</stringProp>
+          <stringProp name="filename"></stringProp>
+          <stringProp name="parameters"></stringProp>
+          <stringProp name="script">// Get all threads in the thread group
+var threadCount = ctx.getThreadGroup().getNumThreads();
+log.info(&quot;Thread Count: &quot; + threadCount);
+ctx.getThreadGroup().stopThread(java.lang.Thread.currentThread().getName().split(&quot;-&quot;)[0] + &quot;-&quot; + 1, true);
+log.info(&quot;Thread Count: &quot; + ctx.getThreadGroup().getNumberOfThreads());
+// Find the first running thread
+var runningThread = null;
+/*for (var i = 1; i &lt; threadCount; i++) {
+    if (threads[i].isRunning()) {
+        runningThread = threads[i];
+        break;
+    }
+}*/
+
+// Check if a running thread is found
+if (runningThread !== null) {
+    // Get the Thread ID of the first running thread
+    var threadId = runningThread.getThreadId();
+
+    // Log the Thread ID
+    log.info(&quot;Thread ID of the first running thread: &quot; + threadId);
+} else {
+    log.warn(&quot;No running threads found.&quot;);
+}
+</stringProp>
+          <stringProp name="scriptLanguage">javascript</stringProp>
+        </JSR223Sampler>
+        <hashTree>
+          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
+            <stringProp name="ConstantTimer.delay">6000</stringProp>
+          </ConstantTimer>
+          <hashTree/>
+        </hashTree>
+        <JSR223Sampler guiclass="TestBeanGUI" testclass="JSR223Sampler" testname="StopThreadV2" enabled="false">
+          <stringProp name="cacheKey">true</stringProp>
+          <stringProp name="filename"></stringProp>
+          <stringProp name="parameters"></stringProp>
+          <stringProp name="script">//ctx.getThreadGroup().addNewThread(0, ctx.getEngine());
+if (props.get(&quot;cflag&quot;) != null &amp;&amp; props.get(&quot;cflag&quot;).indexOf(&quot;stop&quot;) !== -1) {
+	 props.put(&quot;cflag&quot;, &quot;done&quot;);
+
+log.info(&quot;ThreadNameWithoutID::&quot; + java.lang.Thread.currentThread().getName().split(&quot;-&quot;)[0]);
+log.info(&quot;ThreadCount::&quot; + ctx.getThreadGroup().getNumThreads());
+log.info(&quot;ThreadNum::&quot; + &quot;${__threadNum}&quot;);
+log.info(&quot;ThreadGrpNum::&quot; + ctx.getThreadGroup().getName());
+
+
+//ctx.getThreadGroup().stopThread(java.lang.Thread.currentThread().getName(),true);	
+for(i=1;i&lt;=5;i++)
+{
+	log.info(&quot;StopThis::&quot;+java.lang.Thread.currentThread().getName().split(&quot;-&quot;)[0]+&quot;-&quot;+i)
+	ctx.getThreadGroup().stopThread(java.lang.Thread.currentThread().getName().split(&quot;-&quot;)[0]+&quot;-&quot;+i,true);	
+}
+//ctx.getThreadGroup().addNewThread(0, ctx.getEngine());
+//java.lang.Thread.currentThread().stop()
+}</stringProp>
+          <stringProp name="scriptLanguage">javascript</stringProp>
+        </JSR223Sampler>
+        <hashTree>
+          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="false">
+            <stringProp name="ConstantTimer.delay">6000</stringProp>
+          </ConstantTimer>
+          <hashTree/>
+        </hashTree>
+        <JSR223Sampler guiclass="TestBeanGUI" testclass="JSR223Sampler" testname="StopThread" enabled="false">
+          <stringProp name="cacheKey">true</stringProp>
+          <stringProp name="filename"></stringProp>
+          <stringProp name="parameters"></stringProp>
+          <stringProp name="script">//ctx.getThreadGroup().addNewThread(0, ctx.getEngine());
+if (props.get(&quot;cflag&quot;) != null &amp;&amp; props.get(&quot;cflag&quot;).indexOf(&quot;true&quot;) !== -1) {
+	 props.put(&quot;cflag&quot;, &quot;false&quot;);
+
+log.info(&quot;ThreadNameWithoutID::&quot; + java.lang.Thread.currentThread().getName().split(&quot;-&quot;)[0]);
+log.info(&quot;ThreadCount::&quot; + ctx.getThreadGroup().getNumThreads());
+log.info(&quot;ThreadNum::&quot; + &quot;${__threadNum}&quot;);
+log.info(&quot;ThreadGrpNum::&quot; + ctx.getThreadGroup().getName());
+
+
+//ctx.getThreadGroup().stopThread(java.lang.Thread.currentThread().getName(),true);	
+for(i=1;i&lt;=5;i++)
+{
+	log.info(&quot;StopThis::&quot;+java.lang.Thread.currentThread().getName().split(&quot;-&quot;)[0]+&quot;-&quot;+i)
+	ctx.getThreadGroup().stopThread(java.lang.Thread.currentThread().getName().split(&quot;-&quot;)[0]+&quot;-&quot;+i,true);	
+}
+//ctx.getThreadGroup().addNewThread(0, ctx.getEngine());
+//java.lang.Thread.currentThread().stop()
+}</stringProp>
+          <stringProp name="scriptLanguage">javascript</stringProp>
+        </JSR223Sampler>
+        <hashTree>
+          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="false">
+            <stringProp name="ConstantTimer.delay">6000</stringProp>
+          </ConstantTimer>
+          <hashTree/>
+        </hashTree>
+        <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller" enabled="false">
+          <stringProp name="IfController.condition">${__javaScript((props.get(&quot;cflag&quot;).contains(&quot;true&quot;)))}</stringProp>
+          <boolProp name="IfController.evaluateAll">false</boolProp>
+          <boolProp name="IfController.useExpression">true</boolProp>
+        </IfController>
+        <hashTree>
+          <JSR223Sampler guiclass="TestBeanGUI" testclass="JSR223Sampler" testname="StopThread" enabled="false">
+            <stringProp name="cacheKey">true</stringProp>
+            <stringProp name="filename"></stringProp>
+            <stringProp name="parameters"></stringProp>
+            <stringProp name="script">
+//stop
+
+// get number of active thread numberOfActiveThreads()  -- 100
+// if active thread count is resuced -- set flag back to 0
+// if thread id is greater than updated user count
+ctx.getThread().stop()
+</stringProp>
+            <stringProp name="scriptLanguage">javascript</stringProp>
+          </JSR223Sampler>
+          <hashTree/>
+        </hashTree>
+        <DebugSampler guiclass="TestBeanGUI" testclass="DebugSampler" testname="Debug Sampler" enabled="true">
+          <boolProp name="displayJMeterProperties">true</boolProp>
+          <boolProp name="displayJMeterVariables">true</boolProp>
+          <boolProp name="displaySystemProperties">false</boolProp>
+        </DebugSampler>
+        <hashTree/>
+      </hashTree>
+      <SetupThreadGroup guiclass="SetupThreadGroupGui" testclass="SetupThreadGroup" testname="setUp Thread Group" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">1</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration"></stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
+      </SetupThreadGroup>
+      <hashTree>
+        <JSR223Sampler guiclass="TestBeanGUI" testclass="JSR223Sampler" testname="JSR223 Sampler" enabled="true">
+          <stringProp name="scriptLanguage">groovy</stringProp>
+          <stringProp name="parameters"></stringProp>
+          <stringProp name="filename"></stringProp>
+          <stringProp name="cacheKey">true</stringProp>
+          <stringProp name="script">props.clear()
+//props.put(&quot;cusercount&quot;,&quot;1&quot;);
+//props.put(&quot;cwho&quot;,&quot;done&quot;);
+</stringProp>
+        </JSR223Sampler>
+        <hashTree/>
+      </hashTree>
+    </hashTree>
+  </hashTree>
+</jmeterTestPlan>
