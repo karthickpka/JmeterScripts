@@ -1,0 +1,480 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="5.0" jmeter="5.5">
+  <hashTree>
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="TP_PerfLab_01_defaultTG" enabled="true">
+      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+        <collectionProp name="Arguments.arguments"/>
+      </elementProp>
+      <boolProp name="TestPlan.functional_mode">false</boolProp>
+      <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
+      <stringProp name="TestPlan.comments"></stringProp>
+      <stringProp name="TestPlan.user_define_classpath"></stringProp>
+    </TestPlan>
+    <hashTree>
+      <ConfigTestElement guiclass="HttpDefaultsGui" testclass="ConfigTestElement" testname="HTTP Request Defaults" enabled="true">
+        <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+          <collectionProp name="Arguments.arguments"/>
+        </elementProp>
+        <stringProp name="HTTPSampler.domain"></stringProp>
+        <stringProp name="HTTPSampler.port"></stringProp>
+        <stringProp name="HTTPSampler.protocol"></stringProp>
+        <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+        <stringProp name="HTTPSampler.path"></stringProp>
+        <stringProp name="HTTPSampler.concurrentPool">6</stringProp>
+        <stringProp name="HTTPSampler.proxyHost">localhost</stringProp>
+        <stringProp name="HTTPSampler.proxyPort">8888</stringProp>
+        <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+        <stringProp name="HTTPSampler.response_timeout"></stringProp>
+      </ConfigTestElement>
+      <hashTree/>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="TG1" enabled="true">
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">0</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" enabled="false">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <intProp name="LoopController.loops">-1</intProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.duration">120</stringProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
+      </ThreadGroup>
+      <hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="1_1_PT_Request_Type_-Delete" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">This is expected to be sent back as part of Delete response body.${__RandomString(12,abcdefghijklmnopqrstuvwxyz1234567890)}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain"></stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
+          <stringProp name="HTTPSampler.path">https://postman-echo.com/delete12</stringProp>
+          <stringProp name="HTTPSampler.method">DELETE</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">false</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.implementation">HttpClient4</stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="via" elementType="Header">
+                <stringProp name="Header.name">via</stringProp>
+                <stringProp name="Header.value">1.1 akamai.net(ghost) (AkamaiGHost)</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <JSR223PostProcessor guiclass="TestBeanGUI" testclass="JSR223PostProcessor" testname="cTest" enabled="true">
+            <stringProp name="cacheKey">true</stringProp>
+            <stringProp name="script">/**
+ * What this code does:
+ * Checks if the previous response was a failure.
+ * If the previous response failed, it sends a request to example.com using a fiddler proxy.
+ * It then extracts a value with the regular expression &quot;Example (.+?)&lt;&quot;.
+ * The extracted value is saved in the variable &quot;cPropValue&quot;.
+ */
+
+vars.put(&quot;cPropValue&quot;, (function() {
+  // Check if the previous sampler was successful
+  var isPreviousSuccessful = !prev.isSuccessful();
+
+  // Create an HTTPSampler instance
+  if (isPreviousSuccessful) {
+    var sampler = new org.apache.jmeter.protocol.http.sampler.HTTPSamplerProxy();
+
+    // Set the URL of the request
+    sampler.setDomain(&quot;example.com&quot;);
+    sampler.setPath(&quot;/&quot;);
+
+    // Set the request method (GET, POST, etc.)
+    sampler.setMethod(&quot;GET&quot;);
+
+    // Set the proxy configuration
+    var proxyHost = &quot;localhost&quot;;
+    var proxyPort = 8888;
+
+    // Configure the proxy
+    sampler.setProperty(&quot;HTTPSampler.proxyHost&quot;, proxyHost);
+    sampler.setProperty(&quot;HTTPSampler.proxyPort&quot;, proxyPort);
+
+    try {
+      // Execute the sampler and get the response
+      var result = sampler.sample();
+
+      // Get the response code
+      var responseCode = result.getResponseCode();
+
+      // Print the response code
+      log.info(&quot;Response code: &quot; + responseCode);
+
+      // You can also access other response properties like response data, headers, etc.
+      var responseData = result.getResponseDataAsString();
+      // var responseHeaders = result.getResponseHeaders();
+      var regex = &quot;Example (.+?)&lt;&quot;;
+      var extractedValue = extractValueFromResponseBody(responseData, regex);
+      // log.info(&quot;Extracted value: &quot; + extractedValue);
+
+    } catch (err) {
+      log.error(&quot;Error sending request: &quot; + err);
+    }
+  }
+
+  // Regex Response Extractor
+  function extractValueFromResponseBody(responseBody, regex) {
+    var pattern = new RegExp(regex);
+    var match = responseBody.match(pattern);
+    for (i = 0; i &lt; match.length; i++)
+      log.info(&quot;value::&quot; + i + &quot;::&quot; + match[i])
+
+    if (match &amp;&amp; match.length &gt; 1) {
+      return match[1];
+    }
+    return null;
+  }
+
+  return extractedValue;
+})());
+</stringProp>
+            <stringProp name="scriptLanguage">javascript</stringProp>
+            <stringProp name="parameters"></stringProp>
+            <stringProp name="filename"></stringProp>
+          </JSR223PostProcessor>
+          <hashTree/>
+          <JSR223PostProcessor guiclass="TestBeanGUI" testclass="JSR223PostProcessor" testname="cTestWorking" enabled="false">
+            <stringProp name="cacheKey">true</stringProp>
+            <stringProp name="script">/******
+
+What this code does
+Checks if prev response if failure.
+If prev response failed then sends a request to example.com
+Proxy is set to fiddler proxy
+Extracts a value with regular expression &quot;Example (.+?)&lt;&quot;
+Saves the value in variable &quot;cPropValue&quot;
+
+***********/
+
+
+vars.put(&quot;cPropValue&quot;,
+(function(){
+// Check if the previous sampler was successful
+var isPreviousSuccessful = !prev.isSuccessful();;
+
+// Create an HTTPSampler instance
+if(isPreviousSuccessful){
+var sampler = new org.apache.jmeter.protocol.http.sampler.HTTPSamplerProxy();
+
+// Set the URL of the request
+sampler.setDomain(&quot;example.com&quot;);
+sampler.setPath(&quot;/&quot;);
+
+// Set the request method (GET, POST, etc.)
+sampler.setMethod(&quot;GET&quot;);
+
+// Set the proxy configuration
+var proxyHost = &quot;localhost&quot;;
+var proxyPort = 8888;
+
+// Configure the proxy
+sampler.setProperty(&quot;HTTPSampler.proxyHost&quot;, proxyHost);
+sampler.setProperty(&quot;HTTPSampler.proxyPort&quot;, proxyPort);
+
+try {
+  // Execute the sampler and get the response
+  var result = sampler.sample();
+  
+  // Get the response code
+  var responseCode = result.getResponseCode();
+  
+  // Print the response code
+  log.info(&quot;Response code: &quot; + responseCode);
+  
+  // You can also access other response properties like response data, headers, etc.
+   var responseData = result.getResponseDataAsString();
+  // var responseHeaders = result.getResponseHeaders();
+  var regex = &quot;Example (.+?)&lt;&quot;;
+  var extractedValue = extractValueFromResponseBody(responseData, regex);
+  //log.info(&quot;Extracted value: &quot; + extractedValue);
+
+  
+} catch (err) {
+  log.error(&quot;Error sending request: &quot; + err);
+}
+}
+
+// Regex Response Extractor
+function extractValueFromResponseBody(responseBody, regex) {
+  var pattern = new RegExp(regex);
+  var match = responseBody.match(pattern);
+	for(i=0;i&lt;match.length;i++)
+	  log.info(&quot;value::&quot;+i+&quot;::&quot;+match[i])
+  
+  if (match &amp;&amp; match.length &gt; 1) {
+    return match[1];
+  }
+  return null;
+}
+
+return extractedValue;
+}
+)());</stringProp>
+            <stringProp name="scriptLanguage">javascript</stringProp>
+            <stringProp name="parameters"></stringProp>
+            <stringProp name="filename"></stringProp>
+          </JSR223PostProcessor>
+          <hashTree/>
+          <JSR223PostProcessor guiclass="TestBeanGUI" testclass="JSR223PostProcessor" testname="cTest" enabled="false">
+            <stringProp name="cacheKey">true</stringProp>
+            <stringProp name="script">// Create an HTTPSampler instance
+var sampler = new org.apache.jmeter.protocol.http.sampler.HTTPSamplerProxy();
+
+// Set the URL of the request
+sampler.setDomain(&quot;example.com&quot;);
+sampler.setPath(&quot;/&quot;);
+
+// Set the request method (GET, POST, etc.)
+sampler.setMethod(&quot;GET&quot;);
+
+// Set the proxy configuration
+var proxyHost = &quot;localhost&quot;;
+var proxyPort = 8888;
+
+// Configure the proxy
+sampler.setProperty(&quot;HTTPSampler.proxyHost&quot;, proxyHost);
+sampler.setProperty(&quot;HTTPSampler.proxyPort&quot;, proxyPort);
+
+try {
+  // Execute the sampler and get the response
+  var result = sampler.sample();
+  
+  // Get the response code
+  var responseCode = result.getResponseCode();
+  
+  // Print the response code
+  log.info(&quot;Response code: &quot; + responseCode);
+  
+  // You can also access other response properties like response data, headers, etc.
+   var responseData = result.getResponseDataAsString();
+  // var responseHeaders = result.getResponseHeaders();
+  
+} catch (err) {
+  log.error(&quot;Error sending request: &quot; + err);
+}
+
+
+function extractValueFromResponseBody(responseBody, regex) {
+  var pattern = new RegExp(regex);
+  var match = responseBody.match(pattern);
+  if (match &amp;&amp; match.length &gt; 1) {
+    return match[1];
+  }
+  return null;
+}
+
+// Usage example
+//var responseBody = &quot;Response body containing the value: 12345&quot;;
+var regex = &quot;Example (.+?)&lt;&quot;;
+var extractedValue = extractValueFromResponseBody(responseData, regex);
+log.info(&quot;Extracted value: &quot; + extractedValue);
+</stringProp>
+            <stringProp name="scriptLanguage">javascript</stringProp>
+            <stringProp name="parameters"></stringProp>
+            <stringProp name="filename"></stringProp>
+          </JSR223PostProcessor>
+          <hashTree/>
+          <JSR223PostProcessor guiclass="TestBeanGUI" testclass="JSR223PostProcessor" testname="cTest" enabled="false">
+            <stringProp name="cacheKey">true</stringProp>
+            <stringProp name="script">prev.setSuccessful(false);</stringProp>
+            <stringProp name="scriptLanguage">javascript</stringProp>
+            <stringProp name="parameters"></stringProp>
+            <stringProp name="filename"></stringProp>
+          </JSR223PostProcessor>
+          <hashTree/>
+          <JSR223PostProcessor guiclass="TestBeanGUI" testclass="JSR223PostProcessor" testname="cTest" enabled="false">
+            <stringProp name="cacheKey">true</stringProp>
+            <stringProp name="script">vars.put(&quot;cTest&quot;,
+(function(){
+
+return ${__setProperty(cpPropValue,&quot;DR11&quot;+Math.floor(Math.random() * 100000).toString(),)};
+}
+)());</stringProp>
+            <stringProp name="scriptLanguage">javascript</stringProp>
+            <stringProp name="parameters"></stringProp>
+            <stringProp name="filename"></stringProp>
+          </JSR223PostProcessor>
+          <hashTree/>
+        </hashTree>
+        <DebugSampler guiclass="TestBeanGUI" testclass="DebugSampler" testname="Debug Sampler" enabled="true">
+          <boolProp name="displayJMeterProperties">true</boolProp>
+          <boolProp name="displayJMeterVariables">true</boolProp>
+          <boolProp name="displaySystemProperties">true</boolProp>
+        </DebugSampler>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="1_1_PT__Request_Type_-GET_" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain"></stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
+          <stringProp name="HTTPSampler.path">https://postman-echo.com/get?foo1=bar1&amp;foo2=${cPropValue}</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">false</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.implementation">HttpClient4</stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="via" elementType="Header">
+                <stringProp name="Header.name">via</stringProp>
+                <stringProp name="Header.value">1.1 akamai.net(ghost) (AkamaiGHost)</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <JSR223PostProcessor guiclass="TestBeanGUI" testclass="JSR223PostProcessor" testname="cPropValue" enabled="false">
+            <stringProp name="cacheKey">true</stringProp>
+            <stringProp name="script">vars.put(&quot;cPropValue&quot;,
+(function(){
+
+return (${__property(cpPropValue,,)});
+}
+)());</stringProp>
+            <stringProp name="scriptLanguage">javascript</stringProp>
+            <stringProp name="parameters"></stringProp>
+            <stringProp name="filename"></stringProp>
+          </JSR223PostProcessor>
+          <hashTree/>
+          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
+            <stringProp name="ConstantTimer.delay">${__javaScript(Math.floor(Math.random() * 5000) + 1000,)}</stringProp>
+          </ConstantTimer>
+          <hashTree/>
+        </hashTree>
+        <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller" enabled="false">
+          <stringProp name="IfController.condition">${JMeterThread.last_sample_ok}</stringProp>
+          <boolProp name="IfController.evaluateAll">false</boolProp>
+          <boolProp name="IfController.useExpression">true</boolProp>
+        </IfController>
+        <hashTree/>
+      </hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="TC2" enabled="false">
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">0</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" enabled="false">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <intProp name="LoopController.loops">-1</intProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.duration">120</stringProp>
+        <boolProp name="ThreadGroup.scheduler">true</boolProp>
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
+      </ThreadGroup>
+      <hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="2_1_PT__Request_Type_-GET_" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain"></stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
+          <stringProp name="HTTPSampler.path">https://postman-echo.com/getabc?foo1=bar1&amp;foo2=${cPropValue}</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">false</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.implementation">HttpClient4</stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="via" elementType="Header">
+                <stringProp name="Header.name">via</stringProp>
+                <stringProp name="Header.value">1.1 akamai.net(ghost) (AkamaiGHost)</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <JSR223PostProcessor guiclass="TestBeanGUI" testclass="JSR223PostProcessor" testname="cPropValue" enabled="true">
+            <stringProp name="cacheKey">true</stringProp>
+            <stringProp name="script">vars.put(&quot;cPropValue&quot;,
+(function(){
+
+return (${__property(cpPropValue,,)});
+}
+)());</stringProp>
+            <stringProp name="scriptLanguage">javascript</stringProp>
+            <stringProp name="parameters"></stringProp>
+            <stringProp name="filename"></stringProp>
+          </JSR223PostProcessor>
+          <hashTree/>
+          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
+            <stringProp name="ConstantTimer.delay">5000</stringProp>
+          </ConstantTimer>
+          <hashTree/>
+        </hashTree>
+      </hashTree>
+      <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>false</xml>
+            <fieldNames>true</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+            <sentBytes>true</sentBytes>
+            <url>true</url>
+            <threadCounts>true</threadCounts>
+            <idleTime>true</idleTime>
+            <connectTime>true</connectTime>
+          </value>
+        </objProp>
+        <stringProp name="filename"></stringProp>
+      </ResultCollector>
+      <hashTree/>
+    </hashTree>
+  </hashTree>
+</jmeterTestPlan>
